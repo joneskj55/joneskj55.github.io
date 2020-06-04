@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script'); /*test*/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One'); /*quote*/
+
+body {
+    font-family: 'Kaushan Script', cursive; /*'Raleway', sans-serif;*/ /*main-font*/
+    color: black;
+    font-size: 20px;
+}
+
+#welcome-info {
+    background-image: url('../img/new-globe.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    max-width: 100%;
+    height: 543px; /*677*/
+    background-size: cover;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+#nav-name {
+    /*font-family: 'Pacifico', cursive;*/
+}
+
+#nav-bar {
+    background-color: black;
+    border: none;
+}
+
+#name-welcome {
+    font-size: 75px;
+    font-weight: bold;
+    color: #ab9d2e;
+    /*text-shadow: 4px 2px 3px hsl(0, 0%, 100%);*/
+    /*font-family: 'Pacifico', cursive;*/
+}
+
+.avatar {
+    height: 197px;
+    width: 197px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid;
+    overflow: hidden;
+}
+
+#me {
+    height: inherit;
+    width: initial;
+    transform: rotate(360deg);
+    position: relative;
+    top: 0px;
+    left: -26px;
+}
+
+.para-content {
+    font-family: 'Poiret One', cursive;
+}
+
+#job-title {
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    color: white;
+}
+
+.score {
+    position: absolute;
+    right: 0;
+}
+
+#linkedin {
+    color: black;
+    font-size: 200%;
+}
+
+#googleplus {
+    color: black;
+    font-size: 200%;
+}
+
+#github {
+    color: black;
+    font-size: 200%;
+}
+
+#name {
+    height: auto;
+    font-family: 'Poiret One', cursive;
+}
+
+#email {
+    height: auto;
+    font-family: 'Poiret One', cursive;
+}
+
+#phone {
+    height: auto;
+    font-family: 'Poiret One', cursive;
+}
+
+#message {
+    height: 132px;
+    font-family: 'Poiret One', cursive;
+}
+
+#send {
+    font-family: 'Poiret One', cursive;
+}
+
+hr {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#footerwrap {
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.quote {
+    text-align: center;
+    color: #4aa68b;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+}
+
+.glyphicon {
+    color: #4aa68b;
+}
+
+.img-wrap {
+    position: relative;
+    /*height: 200px;*/
+    /*width: 300px;*/
+}
+
+.project-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(74, 166, 139, 0.72);
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 32px;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+}
+
+.project-details {
+    color: white;
+    font-size: 24px;
+
+}
+
+.jikan-details {
+    color: white;
+    font-size: 22px;
+}
+
+.img-wrap:hover .project-description {
+    visibility: visible;
+    opacity: 1;
+    height: 286px;
+    width: 390px;
+}
+
+.hover-hr {
+    /*margin-right: 150px;*/
+    /*margin-left: 100px;*/
+}
+

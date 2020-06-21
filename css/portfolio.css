@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script'); /*test*/
 @import url('https://fonts.googleapis.com/css?family=Poiret+One'); /*quote*/
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body {
-    font-family: 'Kaushan Script', cursive; /*'Raleway', sans-serif;*/ /*main-font*/
+    /*font-family: 'Kaushan Script', cursive; !*'Raleway', sans-serif;*! !*main-font*!*/
+    font-family: 'Inconsolata', monospace;
     color: black;
     font-size: 20px;
 }
@@ -25,6 +27,8 @@ body {
 }
 
 #nav-bar {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
     background-color: black;
     border: none;
 }
@@ -56,11 +60,13 @@ body {
 }
 
 .para-content {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Poiret One', cursive;*/
 }
 
 #job-title {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Poiret One', cursive;*/
     font-weight: bolder;
     color: white;
 }
@@ -87,26 +93,31 @@ body {
 
 #name {
     height: auto;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Poiret One', cursive;*/
 }
 
 #email {
     height: auto;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Poiret One', cursive;*/
 }
 
 #phone {
     height: auto;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Poiret One', cursive;*/
 }
 
 #message {
     height: 132px;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Poiret One', cursive;*/
 }
 
 #send {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Poiret One', cursive;*/
 }
 
 hr {
@@ -128,7 +139,8 @@ ul {
 .quote {
     text-align: center;
     color: #4aa68b;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Poiret One', cursive;*/
     font-size: 20px;
 }
 
@@ -153,7 +165,8 @@ ul {
     visibility: hidden;
     opacity: 0;
     font-size: 32px;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Poiret One', cursive;*/
     text-align: center;
 }
 
@@ -165,7 +178,7 @@ ul {
 
 .jikan-details {
     color: white;
-    font-size: 22px;
+    font-size: 19px;
 }
 
 .img-wrap:hover .project-description {

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One'); /*quote*/
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
+/*Hides the overflow to the right*/
 html, body { overflow-x: hidden; }
 
 body {
@@ -9,6 +10,13 @@ body {
     font-family: 'Inconsolata', monospace;
     color: black;
     font-size: 20px;
+}
+
+/*Fixes the problem with image overflowing out of container*/
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+    height: 300px; /* only if you want fixed height */
 }
 
 #welcome-info {

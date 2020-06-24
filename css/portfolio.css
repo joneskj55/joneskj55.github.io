@@ -46,7 +46,8 @@ body {
 #name-welcome {
     font-size: 75px;
     font-weight: bold;
-    color: #ab9d2e;
+    /*color: #ab9d2e;*/
+    color: #4aa68b;
     /*text-shadow: 4px 2px 3px hsl(0, 0%, 100%);*/
     /*font-family: 'Pacifico', cursive;*/
 }

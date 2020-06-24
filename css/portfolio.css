@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One'); /*quote*/
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
+html, body { overflow-x: hidden; }
+
 body {
     /*font-family: 'Kaushan Script', cursive; !*'Raleway', sans-serif;*! !*main-font*!*/
     font-family: 'Inconsolata', monospace;

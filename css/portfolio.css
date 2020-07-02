@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script'); /*test*/
-@import url('https://fonts.googleapis.com/css?family=Poiret+One'); /*quote*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+/*test*/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+/*quote*/
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 /*Hides the overflow to the right*/
-html, body { overflow-x: hidden; }
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     /*font-family: 'Kaushan Script', cursive; !*'Raleway', sans-serif;*! !*main-font*!*/
@@ -13,7 +17,7 @@ body {
 }
 
 /*Fixes the problem with image overflowing out of container*/
-.fit-image{
+.fit-image {
     width: 100%;
     object-fit: cover;
     height: 300px; /* only if you want fixed height */

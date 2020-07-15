@@ -13,7 +13,7 @@ $(document).ready(function () {
                 + "<h3 id='blog-title'>" + value.title + "</h3>"
                 + "<p id='blog-content'>" + value.content + "</p>"
                 + "<p id='blog-date'>" + value.date + "</p>"
-//              + "<p id='blog-categories'>" + "Categories: " + value.categories.join(", ") + "</p>"
+                //              + "<p id='blog-categories'>" + "Categories: " + value.categories.join(", ") + "</p>"
                 + "<button id='remove-post' class='btn btn-xl del'>Delete Post</button>"
                 + "</div>";
             $("#posts").html(posts);

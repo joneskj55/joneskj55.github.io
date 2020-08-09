@@ -227,7 +227,7 @@ ul {
 .sidenav a:hover {
     color: #064579;
 }
-@media (max-width: 40em) {
+@media (max-width: 1300px) {
     .sidenav {display: none;}
     .sidenav a {display: none;}
     #github-side {display: none;}

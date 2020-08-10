@@ -15,6 +15,7 @@ $(document).ready(function () {
     var currentTime = new Date();
     var year = currentTime.getFullYear();
 
+//-------SIDENAV FADE--------//
     function share() {
         var winWidth = $(window).width();
         if (winWidth > 999 ) {

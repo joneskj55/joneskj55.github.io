@@ -20,7 +20,7 @@ $(document).ready(function () {
         if (winWidth > 999 ) {
             var docHeight = $(document).height();
             var top = $(document).scrollTop();
-            if (top > docHeight - 1740 ) {
+            if (top > docHeight - 1140 ) {
                 $('.share-box').fadeOut(200);
             } else {
                 $('.share-box').fadeIn(200);

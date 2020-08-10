@@ -110,6 +110,16 @@ body {
     font-size: 200%;
 }
 
+#linkedin-side {
+    color: black;
+    font-size: 200%;
+}
+
+#codeup-side {
+    color: black;
+    font-size: 200%;
+}
+
 #name {
     height: auto;
     font-family: 'Inconsolata', monospace;
@@ -219,8 +229,8 @@ ul {
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: #2196F3;
+    /*font-size: 25px;*/
+    /*color: #2196F3;*/
     display: block;
 }
 

@@ -12,15 +12,15 @@ $(document).ready(function () {
     });
 
 //-------DATE & TIME----------//
-    var currentTime = new Date();
-    var year = currentTime.getFullYear();
+    let currentTime = new Date();
+    let year = currentTime.getFullYear();
 
 //-------SIDENAV FADE--------//
     function share() {
-        var winWidth = $(window).width();
+        let winWidth = $(window).width();
         if (winWidth > 999 ) {
-            var docHeight = $(document).height();
-            var top = $(document).scrollTop();
+            let docHeight = $(document).height();
+            let top = $(document).scrollTop();
             if (top > docHeight - 1140 ) {
                 $('.share-box').fadeOut(200);
             } else {

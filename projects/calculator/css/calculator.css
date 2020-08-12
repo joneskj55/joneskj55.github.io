@@ -55,3 +55,7 @@ input {
 .form-control {
     width: 10px;
 }
+
+.github-button {
+    font-size: 25px;
+}

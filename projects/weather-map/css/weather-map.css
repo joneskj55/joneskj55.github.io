@@ -33,7 +33,7 @@ body {
 
 #every-box {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #date-time-group {
@@ -44,7 +44,7 @@ body {
 #temp {
     font-weight: bold;
     font-size: xx-large;
-    color: white;
+    color: black;
 }
 
 #map-canvas {
@@ -54,4 +54,3 @@ body {
     border: 1px solid white;
 }
 
-/*added instructions*/

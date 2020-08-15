@@ -16,22 +16,22 @@ $(document).ready(function () {
     let year = currentTime.getFullYear();
 
 //-------SIDENAV FADE--------//
-    function share() {
+    function sidenavFade() {
         let winWidth = $(window).width();
         if (winWidth > 999 ) {
             let docHeight = $(document).height();
             let top = $(document).scrollTop();
             if (top > docHeight - 1140 ) {
-                $('.share-box').fadeOut(200);
+                $('.sidenav').fadeOut(200);
             } else {
-                $('.share-box').fadeIn(200);
+                $('.sidenav').fadeIn(200);
             }
         } else {
-            $('.share-box').hide();
+            $('.sidenav').hide();
         }
     }
 
     $(window).scroll(function () {
-        share();
+        sidenavFade();
     });
 });

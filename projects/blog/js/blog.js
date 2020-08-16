@@ -3,9 +3,9 @@
 "use strict";
 
 $(document).ready(function () {
-    var blogPosts = $.get("data/blog.json");
-    var posts = [];
-    var newPosts = [];
+    let blogPosts = $.get("data/blog.json");
+    let posts = [];
+    let newPosts = [];
     blogPosts.done(function (data) {
 
         data.forEach(function (value) {
@@ -26,7 +26,7 @@ $(document).ready(function () {
     console.log(newPosts);
 
     $(".btn").click(function () {
-        var newData = {
+        let newData = {
             title: $("#name").val(),
             content: $("#blog-title").val(),
             date: $("#post").val()

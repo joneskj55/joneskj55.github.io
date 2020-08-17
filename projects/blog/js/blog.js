@@ -22,7 +22,7 @@ $(document).ready(function () {
         posts = [];
     });
 
-    //------ADD POST FUNCTION--------//
+    //------ADD POST--------//
     console.log(newPosts);
 
     $(".btn").click(function () {
@@ -47,7 +47,7 @@ $(document).ready(function () {
         clear();
     });
 
-    //-------REMOVE POST FUNCTION--------//
+    //-------REMOVE POST--------//
     $("body").delegate(".del", "click", function () {
         $(this).parent().addClass("hidden");
     });

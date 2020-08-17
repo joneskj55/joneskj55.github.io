@@ -3,7 +3,7 @@
 "use strict";
 
 $(document).ready(function () {
-    let blogPosts = $.get("data/blog.json");
+    const blogPosts = $.get("data/blog.json");
     let posts = [];
     let newPosts = [];
     blogPosts.done(function (data) {

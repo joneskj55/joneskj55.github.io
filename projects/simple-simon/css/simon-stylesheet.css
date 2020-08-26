@@ -9,6 +9,7 @@
 
 .board {
     position: relative;
+    margin-top: 200px;
     margin-bottom: 90px;
     margin-left: auto;
     margin-right: auto;

@@ -1,9 +1,6 @@
 #calculator {
     position: relative;
-    margin-top: 200px;
-    margin-bottom: 90px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 200px auto 90px;
     height: 420px;
     width: 328px;
     text-align: center;

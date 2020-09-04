@@ -1,12 +1,12 @@
 #calculator {
     position: relative;
-    margin: 200px auto 90px;
     height: 420px;
     width: 328px;
     text-align: center;
     background-color: black;
     border: 2px solid;
     border-radius: 13px;
+    margin: 40px auto 90px;
 }
 
 #header {

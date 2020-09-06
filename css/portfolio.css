@@ -246,4 +246,12 @@ ul {
     /*margin-right: 150px;*/
     /*margin-left: 100px;*/
 }
+@media (max-width: 360px) and (max-height: 640px) {
+    .project-description {
+        visibility: visible;
+        opacity: 1;
+        height: 91.5%;
+        width: 95%;
+    }
+}
 

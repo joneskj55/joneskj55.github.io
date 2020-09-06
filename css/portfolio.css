@@ -215,6 +215,13 @@ ul {
     opacity: 1;
     height: 91.5%;
     width: 95%;
+    font-size: 2vw;
+}
+
+.click-to-open {
+    color: black;
+    font-weight: bolder;
+    font-size: 2vw;
 }
 
 .sidenav {
@@ -251,7 +258,12 @@ ul {
         visibility: visible;
         opacity: 1;
         height: 91.5%;
-        width: 95%;
+        width: 91%;
+    }
+    .click-to-open {
+        color: black;
+        font-weight: bolder;
+        font-size: 6vw;
     }
 }
 

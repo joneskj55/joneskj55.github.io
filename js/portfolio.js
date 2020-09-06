@@ -35,3 +35,8 @@ $(document).ready(function () {
         sidenavFade();
     });
 });
+
+//-------NAV-BAR COLLAPSE ON CLICK--------//
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});

@@ -213,8 +213,8 @@ ul {
 .img-wrap:hover .project-description {
     visibility: visible;
     opacity: 1;
-    height: 91%;
-    width: 94%;
+    height: 91.5%;
+    width: 95%;
 }
 
 .sidenav {

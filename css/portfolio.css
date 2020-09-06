@@ -265,5 +265,9 @@ ul {
         font-weight: bolder;
         font-size: 6vw;
     }
+    .img-wrap:hover .project-description {
+        width: 91%;
+        font-size: 32px;
+    }
 }
 

@@ -244,6 +244,7 @@ ul {
 .sidenav a:hover {
     color: #064579;
 }
+/*REMOVE SIDENAV FOR SMALLER SCREENS*/
 @media (max-width: 1300px) {
     .sidenav {display: none;}
     .sidenav a {display: none;}
@@ -253,7 +254,26 @@ ul {
     /*margin-right: 150px;*/
     /*margin-left: 100px;*/
 }
+/*DISPLAY PROJECT DESCRIPTIONS GALAXY S5*/
 @media (max-width: 360px) and (max-height: 640px) {
+    .project-description {
+        visibility: visible;
+        opacity: 1;
+        height: 91.5%;
+        width: 91%;
+    }
+    .click-to-open {
+        color: black;
+        font-weight: bolder;
+        font-size: 6vw;
+    }
+    .img-wrap:hover .project-description {
+        width: 91%;
+        font-size: 32px;
+    }
+}
+/*DISPLAY PROJECT DESCRPITIONS IPHONE X*/
+@media (max-width: 375px) and (max-height: 812px) {
     .project-description {
         visibility: visible;
         opacity: 1;

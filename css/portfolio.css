@@ -368,6 +368,44 @@ ul {
         width: 96%;
     }
 }
+/*iPAD*/
+@media (max-width: 768px) and (max-height: 1024px) {
+    .project-description {
+        visibility: visible;
+        opacity: 1;
+        height: 91.5%;
+        width: 96%;
+        font-size: 36px;
+    }
+    .project-details {
+        font-size: 25px;
+    }
+    .jikan-details {
+        font-size: 25px;
+    }
+    .click-to-open {
+        font-size: 4vw;
+    }
+}
+/*iPAD (LANDSCAPE)*/
+@media (max-width: 1024px) and (max-height: 768px) {
+    .project-description {
+        visibility: visible;
+        opacity: 1;
+        height: 91.5%;
+        width: 94%;
+        font-size: 36px;
+    }
+    .project-details {
+        font-size: 25px;
+    }
+    .jikan-details {
+        font-size: 22px;
+    }
+    .click-to-open {
+        font-size: 3vw;
+    }
+}
 
 
 

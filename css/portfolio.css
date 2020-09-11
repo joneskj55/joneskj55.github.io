@@ -290,4 +290,25 @@ ul {
         font-size: 32px;
     }
 }
+/*GALAXY FOLD (LANDSCAPE)*/
+@media (max-width: 653px) and (max-height: 280px) {
+    .project-description {
+        visibility: visible;
+        opacity: 1;
+        height: 91.5%;
+        width: 91%;
+    }
+    .click-to-open {
+        font-size: 7vw;
+    }
+}
+/*GALAXY FOLD (PORTRAIT)*/
+@media (max-width: 280px) and (max-height: 653px) {
+    .project-details {
+        font-size: 22px;
+    }
+    .jikan-details {
+        font-size: 16px;
+    }
+}
 

@@ -353,6 +353,22 @@ ul {
         font-size: 7vw;
     }
 }
+/*iPHONE X*/
+@media (max-width: 375px) and (max-height: 812px) {
+    .project-description {
+        width: 92%;
+    }
+    .jikan-details {
+        font-size: 19px;
+    }
+}
+/*iPHONE X (LANDSCAPE)*/
+@media (max-width: 812px) and (max-height: 375px) {
+    .project-description {
+        width: 96%;
+    }
+}
+
 
 
 

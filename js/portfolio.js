@@ -11,17 +11,13 @@ $(document).ready(function () {
         }, 900);
     });
 
-//-------DATE & TIME----------//
-    let currentTime = new Date();
-    let year = currentTime.getFullYear();
-
 //-------SIDENAV FADE--------//
     function sidenavFade() {
         let winWidth = $(window).width();
-        if (winWidth > 999 ) {
+        if (winWidth > 999) {
             let docHeight = $(document).height();
             let top = $(document).scrollTop();
-            if (top > docHeight - 1140 ) {
+            if (top > docHeight - 1140) {
                 $('.sidenav').fadeOut(200);
             } else {
                 $('.sidenav').fadeIn(200);
@@ -37,6 +33,6 @@ $(document).ready(function () {
 });
 
 //-------NAV-BAR COLLAPSE ON CLICK--------//
-$('.navbar-nav>li>a').on('click', function(){
+$('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
 });

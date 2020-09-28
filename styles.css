@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Secular+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    color: ivory;
+    background-color: #000105;
+    background-image: url("img/inspiration-geometry.png");
+}
+
+.main {
+    text-align: center;
+}
+
+.main-header {
+    font-size: 5em;
+    margin-bottom: -50px;
+}
+
+.sub-header {
+    font-size: 3em;
+}
+
+.social {
+    color: ivory;
+    font-size: 3em;
+}
+
+.social:hover {
+    color: lightgrey;
+}
+
+.social-media-div {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#github-icon {
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+span {
+    color: #00cfff;
+}
+
+/*PROJECTS*/
+.centered-ivory {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: ivory;
+}
+
+.centered-black {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: black;
+}
+
+.carousel {
+    background: #EEE;
+}
+
+.carousel-cell {
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.carousel-cell img {
+    display: block;
+    height: 200px;
+    width: 400px;
+}
+
+.button {
+    background-color: ivory;
+    color: black;
+    border: 2px solid black;
+    display: block;
+    margin: 35px auto 55px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #00cfff;
+}
+
+.button:focus {
+    outline: none;
+}
+
+@media screen and ( min-width: 768px ) {
+    .carousel-cell img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #github-icon {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+
+    .main-header {
+        font-size: 4em;
+    }
+
+    .sub-header {
+        font-size: 2em;
+    }
+}

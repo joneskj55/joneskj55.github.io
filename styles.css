@@ -163,12 +163,6 @@ span {
     .carousel-cell img {
         height: 300px;
     }
-    .carousel-cell:hover .image {
-        display: none;
-    }
-    .carousel-cell:hover .middle {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 280px) {

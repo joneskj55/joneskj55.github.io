@@ -131,3 +131,14 @@ span {
         background-color: #00cfff;
     }
 }
+
+@media (max-width: 540px) {
+    .social-media-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #github-icon {
+        padding: 0;
+    }
+}

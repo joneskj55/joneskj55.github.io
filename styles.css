@@ -68,21 +68,21 @@ span {
 }
 
 /*ADD TEXT TO CLICK AT BOTTOM LEFT*/
-/*.bottom-left-white {*/
-/*    position: absolute;*/
-/*    bottom: 8px;*/
-/*    left: 16px;*/
-/*    color: ivory;*/
-/*    font-size: 16px;*/
-/*}*/
+.bottom-left-white {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: ivory;
+    font-size: 16px;
+}
 
-/*.bottom-left-black {*/
-/*    position: absolute;*/
-/*    bottom: 8px;*/
-/*    left: 16px;*/
-/*    color: black;*/
-/*    font-size: 16px;*/
-/*}*/
+.bottom-left-black {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: black;
+    font-size: 16px;
+}
 
 .carousel {
     background: #EEE;
@@ -99,6 +99,7 @@ span {
     width: 400px;
 }
 
+/*HOVER ACTION*/
 .image {
     opacity: 1;
     display: block;
@@ -162,6 +163,12 @@ span {
 @media screen and ( min-width: 768px ) {
     .carousel-cell img {
         height: 300px;
+    }
+    .bottom-left-white {
+        display: none;
+    }
+    .bottom-left-black {
+        display: none;
     }
 }
 

@@ -191,6 +191,15 @@ span {
     .button {
         background-color: #00cfff;
     }
+    .image {
+        display: none;
+    }
+    .middle {
+        display: none;
+    }
+    .text {
+        display: none;
+    }
 }
 
 @media (max-width: 540px) {

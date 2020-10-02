@@ -129,11 +129,35 @@ span {
 }
 
 .text {
-    background-color: #00cfff;
+    background-color: black;
     color: ivory;
     font-size: 30px;
     padding: 16px 32px;
     border-radius: 15px;
+    width: max-content;
+}
+
+.sub-text {
+    font-size: 15px;
+    border-radius: 0;
+    background-color: inherit;
+    color: ivory;
+}
+
+.javascript {
+    color: #f1e05a;
+}
+
+.css {
+    color: #563d7c;
+}
+
+.html {
+    color: #e34c26;
+}
+
+.java {
+    color: #b07219;
 }
 
 .button {
@@ -165,9 +189,11 @@ span {
     .carousel-cell img {
         height: 300px;
     }
+
     .bottom-left-white {
         display: none;
     }
+
     .bottom-left-black {
         display: none;
     }
@@ -192,12 +218,15 @@ span {
     .button {
         background-color: #00cfff;
     }
+
     .image {
         display: none;
     }
+
     .middle {
         display: none;
     }
+
     .text {
         display: none;
     }

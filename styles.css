@@ -129,8 +129,8 @@ span {
 }
 
 .text {
-    background-color: darkgray;
-    color: black;
+    background-color: black;
+    color: ivory;
     font-size: 30px;
     padding: 16px 32px;
     border-radius: 15px;
@@ -141,7 +141,7 @@ span {
     font-size: 15px;
     border-radius: 0;
     background-color: inherit;
-    color: black;
+    color: ivory;
 }
 
 .javascript {
@@ -158,10 +158,6 @@ span {
 
 .java {
     color: #b07219;
-}
-
-.ivory {
-    color: ivory;
 }
 
 .button {

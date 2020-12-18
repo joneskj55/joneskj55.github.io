@@ -194,6 +194,11 @@ span {
     color: ivory;
 }
 
+.error {
+    font-size: 10em;
+    color: #f7e016;
+}
+
 @media screen and ( min-width: 768px ) {
     .carousel-cell img {
         height: 300px;

@@ -170,7 +170,11 @@ span {
 }
 
 .react {
-    color: #61dafb
+    color: #61dafb;
+}
+
+.jam {
+    color: #f0037f;
 }
 
 .button {
@@ -203,6 +207,7 @@ span {
     .carousel-cell img {
         height: 300px;
     }
+
     .bottom-left-white {
         display: none;
     }

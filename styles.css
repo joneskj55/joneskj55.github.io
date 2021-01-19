@@ -84,6 +84,14 @@ span {
     font-size: 16px;
 }
 
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: black;
+    font-size: 16px;
+}
+
 .carousel {
     background: #EEE;
 }
@@ -213,6 +221,10 @@ span {
     }
 
     .bottom-left-black {
+        display: none;
+    }
+
+    .top-left {
         display: none;
     }
 }

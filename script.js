@@ -6,7 +6,7 @@ const typewriter = new Typewriter(subHead, {
 
 typewriter
     .pauseFor(1500)
-    .typeString('<span style="color: #00cfff">Ohio</span> <span style="color: ivory">Kid</span>')
+    .typeString('<span style="color: #bb0101">O</span><span style="color: #c2d5f5">h</span><span style="color: #bb0101">i</span><span style="color: #c2d5f5">o</span> <span style="color: ivory">Kid</span>')
     .pauseFor(300)
     .deleteChars(8)
     .typeString('<span style="color: ivory">Soldier</span>')

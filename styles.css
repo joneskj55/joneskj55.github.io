@@ -211,6 +211,15 @@ span {
     color: #f7e016;
 }
 
+@media (max-width: 414px) {
+    .main-header {
+        font-size: 3.5em;
+    }
+    .sub-header {
+        font-size: 2em;
+    }
+}
+
 @media screen and ( min-width: 768px ) {
     .carousel-cell img {
         height: 300px;
@@ -278,11 +287,3 @@ span {
     }
 }
 
-@media (max-width: 640px) {
-    .main-header {
-        font-size: 3.5em;
-    }
-    .sub-header {
-        font-size: 2em;
-    }
-}

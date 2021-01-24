@@ -277,3 +277,12 @@ span {
         padding: 0;
     }
 }
+
+@media (max-width: 640px) {
+    .main-header {
+        font-size: 3.5em;
+    }
+    .sub-header {
+        font-size: 2em;
+    }
+}

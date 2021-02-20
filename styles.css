@@ -185,6 +185,26 @@ span {
     color: #f0037f;
 }
 
+.mongo {
+    color: #09804C;
+}
+
+.express {
+    color: #eee;
+}
+
+.node {
+    color: #43853d;
+}
+
+.tailwind {
+    color: #45b6d4;
+}
+
+.ejs {
+    color: #a91f50;
+}
+
 .button {
     background-color: #00cfff;
     color: black;

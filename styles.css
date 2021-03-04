@@ -201,6 +201,18 @@ span {
   color: #a91f50;
 }
 
+.jquery {
+  color: #2969ae;
+}
+
+.knockout {
+  color: #c43c02;
+}
+
+.draw {
+  color: #e88307;
+}
+
 .open-weather {
   color: #ea6e4b;
 }

@@ -205,6 +205,10 @@ span {
   color: #2969ae;
 }
 
+.json {
+  color: green;
+}
+
 .knockout {
   color: #c43c02;
 }

@@ -271,6 +271,10 @@ span {
   color: #f7e016;
 }
 
+video {
+  width: 50%;
+}
+
 @media (max-width: 414px) {
   .main-header {
     font-size: 3.5em;
@@ -333,6 +337,12 @@ span {
 
   .sponsor {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  video {
+    width: 100%;
   }
 }
 

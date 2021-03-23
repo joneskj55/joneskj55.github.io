@@ -1,1 +1,4 @@
 ErrorDocument 404 /https://www.joneskj55.github.io/404.html
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|webp)$">
+    Header set Cache-Control "max-age=31536000, public"
+</filesMatch>

@@ -6,12 +6,12 @@ ErrorDocument 404 /https://www.joneskj55.github.io/404.html
 
 <IfModule mod_headers.c>
 
-    <FilesMatch "\.(jpg|jpeg|png|webp)$">
+    <filesMatch "\.(jpg|jpeg|png|webp)$">
         Header set Cache-Control "max-age=31536000, public"
-    </FilesMatch>
+    </filesMatch>
 
 
-    <FilesMatch "\.(css|swf)$">
+    <filesMatch "\.(css|swf)$">
         Header set Cache-Control "max-age=31536000"
-    </FilesMatch>
+    </filesMatch>
 </IfModule>

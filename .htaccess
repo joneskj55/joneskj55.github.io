@@ -2,6 +2,18 @@
  Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
+# Turn off the ETags
+Header unset ETag
+FileETag None
+
+# Turn off the Last Modified header except for html docs
+<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
+Header unset Last-Modified
+</FilesMatch>
+
+# Gzip – To compress much of what leaves the server
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript text/x-javascript text/php
+
 ErrorDocument 404 /https://www.joneskj55.github.io/404.html
 
 

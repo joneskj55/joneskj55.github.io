@@ -3,42 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kevin Jones | Presentations</title>
+    <title>Kevin Jones | Diagrams</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
   </head>
   <body>
     <div class="main">
       <h1 class="main-header">Kevin <span>Jones</span></h1>
       <br />
 
-      <h2 class="sub-header"><span>Presen</span>tations</h2>
-      <h2 class="sub-header">RE<span>ST</span></h2>
+      <h2 class="sub-header"><span>Web</span>-420</h2>
+      <h2 class="sub-header" id="sub-header">Presen<span>tations</span></h2>
 
-      <video controls autoplay>
-        <source
-          src="../restful-api-presentations/Jones-Presentation-1.3.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <div
+        class="main-carousel"
+        data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": false, "wrapAround": true }'
+      >
+        <div class="carousel-cell">
+          <a href="#rest">
+            <img
+              src="../restful-api-presentations/rest-dark.webp"
+              width="400"
+              height="300"
+              alt="rest presentation image"
+              class="image"
+            />
+            <div class="middle">
+              <div class="text">
+                Representational<br />
+                State Transfer<br />
+                (REST)
+              </div>
+            </div>
 
-      <!--      WEEK 2-->
-      <h2 class="sub-header"><span>RESTful</span> APIs</h2>
+            <div class="bottom-left-white"><span>Tap</span> to watch</div>
+          </a>
+        </div>
 
-      <video controls autoplay>
-        <source
-          src="../restful-api-presentations/Jones-Presentation-2.2.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <!--      WEEK 3-->
-      <h2 class="sub-header">SO<span>AP</span></h2>
+        <div class="carousel-cell">
+          <a href="#restapi">
+            <img
+              src="../restful-api-presentations/restapi-dark.webp"
+              width="400"
+              height="300"
+              alt="rest api presentation image"
+              class="image"
+            />
+            <div class="middle">
+              <div class="text">RESTful APIs</div>
+            </div>
 
-      <video controls autoplay>
-        <source
-          src="../restful-api-presentations/Jones-Presentation-3.3.mp4"
-          type="video/mp4"
-        />
-      </video>
+            <div class="bottom-left-white"><span>Tap</span> to watch</div>
+          </a>
+        </div>
+
+        <div class="carousel-cell">
+          <a href="#soap">
+            <img
+              src="../restful-api-presentations/soap-dark.webp"
+              width="400"
+              height="300"
+              alt="soap presentation image"
+              class="image"
+            />
+            <div class="middle">
+              <div class="text">
+                Simple Object<br />
+                Access Protocol<br />
+                (SOAP)
+              </div>
+            </div>
+
+            <div class="bottom-left-white"><span>Tap</span> to watch</div>
+          </a>
+        </div>
+      </div>
       <button
         class="button"
         onclick="window.open('https://kevinjones.engineer/','_self')"
@@ -46,5 +88,50 @@
         Back
       </button>
     </div>
+    <!--    WEEK 1 REST-->
+    <div class="lightbox-target" id="rest">
+      <video controls autoplay>
+        <source
+          src="../restful-api-presentations/Jones-Presentation-1.3.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <a class="lightbox-close" href="#"></a>
+    </div>
+
+    <!--  WEEK 2 REST APIs-->
+    <div class="lightbox-target" id="restapi">
+      <video controls autoplay>
+        <source
+          src="../restful-api-presentations/Jones-Presentation-2.2.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <a class="lightbox-close" href="#"></a>
+    </div>
+
+    <!--  WEEK 3 SOAP-->
+    <div class="lightbox-target" id="soap">
+      <video controls autoplay>
+        <source
+          src="../restful-api-presentations/Jones-Presentation-3.3.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <a class="lightbox-close" href="#"></a>
+    </div>
   </body>
+  <style>
+    /*KEEP THIS HERE IN ORDER TO KEEP THE EXPANDED IMAGE FUNCTIONALITY LOOKING RIGHT*/
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    video {
+      margin-top: 10%;
+    }
+  </style>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </html>

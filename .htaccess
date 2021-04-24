@@ -1,28 +1,3 @@
-<filesMatch ".(ico|jpg|jpeg|png|webp)$">
- Header set Cache-Control "max-age=2592000, public"
-</filesMatch>
-
-# Turn off the ETags
-Header unset ETag
-FileETag None
-
-# Turn off the Last Modified header except for html docs
-<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
-Header unset Last-Modified
-</FilesMatch>
-
-<IfModule deflate_module>
-    # Enable compression for the following file types.
-    AddOutputFilterByType            \
-     DEFLATE                         \
-      application/javascript         \
-      text/css                       \
-      text/html                      \
-      text/javascript                \
-      text/plain                     \
-      text/xml
-</IfModule>
-
 ErrorDocument 404 /https://www.joneskj55.github.io/404.html
 
 

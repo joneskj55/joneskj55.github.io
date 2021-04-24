@@ -76,14 +76,6 @@ span {
   font-size: 16px;
 }
 
-.bottom-right-white {
-  position: absolute;
-  bottom: 8px;
-  right: 65px;
-  color: ivory;
-  font-size: 16px;
-}
-
 .bottom-left-black {
   position: absolute;
   bottom: 8px;

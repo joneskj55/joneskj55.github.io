@@ -152,6 +152,23 @@ span {
   color: ivory;
 }
 
+.middle-svg {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-svg {
+  color: ivory;
+  font-size: 30px;
+  padding: 16px 32px;
+  width: max-content;
+}
+
 .javascript {
   color: #f7e016;
 }

@@ -169,6 +169,18 @@ span {
   width: max-content;
 }
 
+.angular {
+  color: #be012e;
+}
+
+.typescript {
+  color: #2f74c0;
+}
+
+.bootstrap {
+  color: #533b78;
+}
+
 .javascript {
   color: #f7e016;
 }

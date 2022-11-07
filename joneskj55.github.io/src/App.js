@@ -1,59 +1,73 @@
 import React from "react";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import CreateContent from "./components/CreateContent";
-import EditContent from "./components/EditContent";
-import ContentList from "./components/ContentList";
+import CreateVisitor from "./components/CreateVisitor";
+import EditVisitor from "./components/EditVisitor";
+import VisitorList from "./components/VisitorList";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <header className="App-header">
-          <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-pink-500 mb-3">
-            <Link to={"/create-content"} className="nav-link">
-              React MERN Stack App
-            </Link>
-
-            <nav className="justify-content-end">
-              <nav>
-                <Link to={"/create-content"} className="nav-link">
-                  Create Content
+          <Navbar bg="dark" variant="dark">
+            <Container>
+              <Navbar.Brand>
+                <Link to={"/create-visitor"} className="nav-link">
+                  React MERN Stack App
                 </Link>
-              </nav>
-              <nav>
-                <Link to={"/content-list"} className="nav-link">
-                  Content List
-                </Link>
-              </nav>
-            </nav>
-          </nav>
+              </Navbar.Brand>
+              <Nav className="justify-content-end">
+                <Nav>
+                  <Link to={"/create-visitor"} className="nav-link">
+                    Create Visitor
+                  </Link>
+                </Nav>
+                <Nav>
+                  <Link to={"/visitor-list"} className="nav-link">
+                    Visitor List
+                  </Link>
+                </Nav>
+              </Nav>
+            </Container>
+          </Navbar>
         </header>
-
-        <div className="wrapper">
-          <Switch>
-            <Route
-              exact
-              path="/"
-              component={(props) => <CreateContent {...props} />}
-            />
-            <Route
-              exact
-              path="/create-content"
-              component={(props) => <CreateContent {...props} />}
-            />
-            <Route
-              exact
-              path="/edit-content/:id"
-              component={(props) => <EditContent {...props} />}
-            />
-            <Route
-              exact
-              path="/content-list"
-              component={(props) => <ContentList {...props} />}
-            />
-          </Switch>
-        </div>
+        <Container>
+          <Row>
+            <Col md={12}>
+              <div className="wrapper">
+                <Switch>
+                  <Route
+                    exact
+                    path="/"
+                    component={(props) => <CreateVisitor {...props} />}
+                  />
+                  <Route
+                    exact
+                    path="/create-visitor"
+                    component={(props) => <CreateVisitor {...props} />}
+                  />
+                  <Route
+                    exact
+                    path="/edit-visitor/:id"
+                    component={(props) => <EditVisitor {...props} />}
+                  />
+                  <Route
+                    exact
+                    path="/visitor-list"
+                    component={(props) => <VisitorList {...props} />}
+                  />
+                </Switch>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </Router>
     </div>
   );

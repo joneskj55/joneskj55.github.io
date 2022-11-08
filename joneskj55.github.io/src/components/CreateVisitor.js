@@ -14,6 +14,7 @@ export default class CreateVisitor extends Component {
     this.state = {
       name: "",
       email: "",
+      date: new Date().toLocaleDateString(),
     };
   }
 
@@ -30,11 +31,14 @@ export default class CreateVisitor extends Component {
     const visitorObject = {
       name: this.state.name,
       email: this.state.email,
+      date: this.state.date,
     };
     axios
       .post("http://localhost:4000/visitors/create-visitor", visitorObject)
       .then((res) => console.log(res.data));
-    this.setState({ name: "", email: "" });
+    this.setState({ name: "", email: "", date: "" });
+    // Redirect to Visitor List
+    this.props.history.push("/visitor-list");
   }
 
   render() {
@@ -64,7 +68,7 @@ export default class CreateVisitor extends Component {
             type="submit"
             className="mt-4"
           >
-            Create Visitor
+            Add Name
           </Button>
         </Form>
       </div>

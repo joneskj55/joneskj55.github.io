@@ -9,6 +9,9 @@ const VisitorSchema = new Schema(
     email: {
       type: String,
     },
+    date: {
+      type: Date,
+    },
   },
   {
     collection: "visitors",

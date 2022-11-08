@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CreateVisitor from "./components/CreateVisitor";
-import EditVisitor from "./components/EditVisitor";
 import VisitorList from "./components/VisitorList";
 
 function App() {
@@ -52,11 +51,6 @@ function App() {
                     exact
                     path="/create-visitor"
                     component={(props) => <CreateVisitor {...props} />}
-                  />
-                  <Route
-                    exact
-                    path="/edit-visitor/:id"
-                    component={(props) => <EditVisitor {...props} />}
                   />
                   <Route
                     exact

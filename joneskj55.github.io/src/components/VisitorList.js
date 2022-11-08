@@ -38,7 +38,7 @@ export default class VisitorList extends Component {
             <tr>
               <th>Name</th>
               <th>Email</th>
-              <th>Action</th>
+              <th>Date</th>
             </tr>
           </thead>
           <tbody>{this.DataTable()}</tbody>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import VisitorTableRow from "./VisitorTableRow";
 
 export default class CreateVisitor extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class CreateVisitor extends Component {
       name: "",
       email: "",
       date: new Date(),
+      visitors: [],
     };
   }
 
@@ -25,7 +27,7 @@ export default class CreateVisitor extends Component {
   }
 
   onSubmit(e) {
-    e.preventDefault();
+    // e.preventDefault();
     const visitorObject = {
       name: this.state.name,
       email: this.state.email,
@@ -39,9 +41,31 @@ export default class CreateVisitor extends Component {
       email: "",
       date: "",
     });
+    // auto load data to table after submit without refresh
+    axios.get("http://localhost:4000/visitors/").then((res) => {
+      this.setState({
+        visitors: res.data,
+      });
+    });
+  }
 
-    // Redirect to Visitor List
-    this.props.history.push("/visitor-list");
+  componentDidMount() {
+    axios
+      .get("http://localhost:4000/visitors/")
+      .then((res) => {
+        this.setState({
+          visitors: res.data,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+  DataTable() {
+    return this.state.visitors.map((res, i) => {
+      return <VisitorTableRow obj={res} key={i} />;
+    });
   }
 
   render() {
@@ -94,6 +118,19 @@ export default class CreateVisitor extends Component {
             </div>
           </div>
         </form>
+
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>{this.DataTable()}</tbody>
+          </table>
+        </div>
       </div>
     );
   }

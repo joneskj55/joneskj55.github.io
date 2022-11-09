@@ -1,10 +1,10 @@
-let express = require("express");
-let mongoose = require("mongoose");
-let cors = require("cors");
-let bodyParser = require("body-parser");
-// Express Route
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+
 const visitorRoute = require("../server/routes/visitors");
-// Connecting mongoDB Database
+
 mongoose
   .connect("mongodb://127.0.0.1:27017/mydatabase")
   .then((x) => {
@@ -15,7 +15,9 @@ mongoose
   .catch((err) => {
     console.error("Error connecting to mongo", err.reason);
   });
+
 const app = express();
+
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
@@ -25,15 +27,15 @@ app.use(
 app.use(cors());
 app.use("/visitors", visitorRoute);
 
-// PORT
 const port = process.env.PORT || 4000;
-const server = app.listen(port, () => {
+app.listen(port, () => {
   console.log("Connected to port " + port);
 });
-// 404 Error
+
 app.use((req, res, next) => {
   next(createError(404));
 });
+
 app.use(function (err, req, res, next) {
   console.error(err.message);
   if (!err.statusCode) err.statusCode = 500;

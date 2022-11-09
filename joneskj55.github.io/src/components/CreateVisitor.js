@@ -6,23 +6,23 @@ import axios from "axios";
 export default class CreateVisitor extends Component {
   constructor(props) {
     super(props);
-    // Setting up functions
-    this.onChangeVisitorName = this.onChangeVisitorName.bind(this);
-    this.onChangeVisitorEmail = this.onChangeVisitorEmail.bind(this);
+
+    this.createVisitorName = this.createVisitorName.bind(this);
+    this.createVisitorEmail = this.createVisitorEmail.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
-    // Setting up state
+
     this.state = {
       name: "",
       email: "",
-      date: new Date().toLocaleDateString(),
+      date: new Date(),
     };
   }
 
-  onChangeVisitorName(e) {
+  createVisitorName(e) {
     this.setState({ name: e.target.value });
   }
 
-  onChangeVisitorEmail(e) {
+  createVisitorEmail(e) {
     this.setState({ email: e.target.value });
   }
 
@@ -36,7 +36,12 @@ export default class CreateVisitor extends Component {
     axios
       .post("http://localhost:4000/visitors/create-visitor", visitorObject)
       .then((res) => console.log(res.data));
-    this.setState({ name: "", email: "", date: "" });
+    this.setState({
+      name: "",
+      email: "",
+      date: "",
+    });
+    
     // Redirect to Visitor List
     this.props.history.push("/visitor-list");
   }
@@ -50,7 +55,7 @@ export default class CreateVisitor extends Component {
             <Form.Control
               type="text"
               value={this.state.name}
-              onChange={this.onChangeVisitorName}
+              onChange={this.createVisitorName}
             />
           </Form.Group>
           <Form.Group controlId="Email">
@@ -58,7 +63,7 @@ export default class CreateVisitor extends Component {
             <Form.Control
               type="email"
               value={this.state.email}
-              onChange={this.onChangeVisitorEmail}
+              onChange={this.createVisitorEmail}
             />
           </Form.Group>
           <Button

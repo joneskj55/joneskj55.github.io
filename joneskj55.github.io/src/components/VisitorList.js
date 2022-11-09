@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Table from "react-bootstrap/Table";
 import VisitorTableRow from "./VisitorTableRow";
 
 export default class VisitorList extends Component {
@@ -32,8 +31,8 @@ export default class VisitorList extends Component {
 
   render() {
     return (
-      <div className="table-wrapper">
-        <Table striped bordered hover>
+      <div>
+        <table>
           <thead>
             <tr>
               <th>Name</th>
@@ -42,7 +41,7 @@ export default class VisitorList extends Component {
             </tr>
           </thead>
           <tbody>{this.DataTable()}</tbody>
-        </Table>
+        </table>
       </div>
     );
   }

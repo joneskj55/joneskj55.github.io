@@ -41,7 +41,7 @@ export default class CreateVisitor extends Component {
       email: "",
       date: "",
     });
-    
+
     // Redirect to Visitor List
     this.props.history.push("/visitor-list");
   }
@@ -56,6 +56,7 @@ export default class CreateVisitor extends Component {
               type="text"
               value={this.state.name}
               onChange={this.createVisitorName}
+              required
             />
           </Form.Group>
           <Form.Group controlId="Email">
@@ -64,6 +65,7 @@ export default class CreateVisitor extends Component {
               type="email"
               value={this.state.email}
               onChange={this.createVisitorEmail}
+              required
             />
           </Form.Group>
           <Button

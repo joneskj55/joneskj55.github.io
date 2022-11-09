@@ -6,7 +6,7 @@ export default class VisitorTableRow extends Component {
       <tr>
         <td>{this.props.obj.name}</td>
         <td>{this.props.obj.email}</td>
-        <td>{this.props.obj.date}</td>
+        <td>{new Date(this.props.obj.date).toLocaleDateString()}</td>
       </tr>
     );
   }

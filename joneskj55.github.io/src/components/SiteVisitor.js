@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import VisitorTableRow from "./VisitorTableRow";
 
-export default class CreateVisitor extends Component {
+export default class SiteVisitor extends Component {
   constructor(props) {
     super(props);
 
@@ -76,7 +76,7 @@ export default class CreateVisitor extends Component {
             <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-around">
               <form onSubmit={this.onSubmit} className="flex flex-col">
                 <div className="overflow-hidden shadow sm:rounded-md">
-                  <div className="bg-white px-4 py-5 sm:p-6">
+                  <div className="bg-gray-200 px-4 py-5 sm:p-6">
                     <div className="grid grid-cols-6 gap-6">
                       <div className="col-span-6 sm:col-span-3">
                         <label
@@ -111,7 +111,7 @@ export default class CreateVisitor extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                  <div className="bg-gray-400 px-4 py-3 text-right sm:px-6">
                     <button
                       type="submit"
                       className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
@@ -122,17 +122,25 @@ export default class CreateVisitor extends Component {
                 </div>
               </form>
 
-              <div className="flex flex-col">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>{this.DataTable()}</tbody>
-                </table>
+              <div className="flex flex-col h-full w-full md:w-3/5">
+                <div className="rounded overflow-hidden border">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="bg-gray-200">
+                        <th className="p-1 sm:p-4 text-center text-gray-600">
+                          Name
+                        </th>
+                        <th className="p-1 sm:p-4 text-center text-gray-600">
+                          Email
+                        </th>
+                        <th className="p-1 sm:p-4 text-center text-gray-600">
+                          Date
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-center">{this.DataTable()}</tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>

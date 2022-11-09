@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import CreateVisitor from "./components/CreateVisitor";
-import VisitorList from "./components/VisitorList";
+import SiteVisitor from "./components/SiteVisitor";
 import HomePage from "./components/HomePage";
 
 function App() {
@@ -10,11 +9,11 @@ function App() {
     <div>
       <Router>
         <header>
-          <nav className="sticky top-0 mx-auto p-5 font-sans flex justify-between py-4 px-6 bg-green-800 shadow sm:items-baseline w-full mb-14">
+          <nav className="sticky top-0 mx-auto p-5 font-sans flex justify-between py-4 px-6 bg-gray-200 shadow sm:items-baseline w-full mb-14">
             <div>
               <Link
                 to={"/"}
-                className="text-2xl no-underline text-white hover:text-gray-300"
+                className="text-2xl text-gray-600 no-underline hover:text-gray-500"
               >
                 Kevin Jones
               </Link>
@@ -23,16 +22,9 @@ function App() {
             <ul className="flex flex-row">
               <Link
                 to={"/create-visitor"}
-                className="pr-5 text-lg no-underline text-white hover:text-gray-300"
+                className="pr-5 text-lg text-gray-600 hover:text-gray-500"
               >
-                Create Visitor
-              </Link>
-
-              <Link
-                to={"/visitor-list"}
-                className="pr-5 text-lg no-underline text-white hover:text-gray-300"
-              >
-                Visitor List
+                Site Visitors
               </Link>
             </ul>
           </nav>
@@ -47,12 +39,7 @@ function App() {
             <Route
               exact
               path="/create-visitor"
-              component={(props) => <CreateVisitor {...props} />}
-            />
-            <Route
-              exact
-              path="/visitor-list"
-              component={(props) => <VisitorList {...props} />}
+              component={(props) => <SiteVisitor {...props} />}
             />
           </Switch>
         </div>

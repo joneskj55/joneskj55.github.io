@@ -3,30 +3,38 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CreateVisitor from "./components/CreateVisitor";
 import VisitorList from "./components/VisitorList";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
     <div>
       <Router>
         <header>
-          <nav>
-            <nav>
-              <Link to={"/create-visitor"} className="nav-link">
-                React MERN Stack App
+          <nav className="sticky top-0 mx-auto p-5 font-sans flex justify-between py-4 px-6 bg-green-800 shadow sm:items-baseline w-full mb-14">
+            <div>
+              <Link
+                to={"/"}
+                className="text-2xl no-underline text-white hover:text-gray-300"
+              >
+                Kevin Jones
               </Link>
-            </nav>
-            <nav>
-              <nav>
-                <Link to={"/create-visitor"} className="nav-link">
-                  Create Visitor
-                </Link>
-              </nav>
-              <nav>
-                <Link to={"/visitor-list"} className="nav-link">
-                  Visitor List
-                </Link>
-              </nav>
-            </nav>
+            </div>
+
+            <ul className="flex flex-row">
+              <Link
+                to={"/create-visitor"}
+                className="pr-5 text-lg no-underline text-white hover:text-gray-300"
+              >
+                Create Visitor
+              </Link>
+
+              <Link
+                to={"/visitor-list"}
+                className="pr-5 text-lg no-underline text-white hover:text-gray-300"
+              >
+                Visitor List
+              </Link>
+            </ul>
           </nav>
         </header>
         <div>
@@ -34,7 +42,7 @@ function App() {
             <Route
               exact
               path="/"
-              component={(props) => <CreateVisitor {...props} />}
+              component={(props) => <HomePage {...props} />}
             />
             <Route
               exact

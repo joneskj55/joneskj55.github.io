@@ -4,7 +4,7 @@ import resume from "../resumeKevinJones.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-class App extends Component {
+class Resume extends Component {
   state = { numPages: null, pageNumber: 1 };
 
   onDocumentLoadSuccess = ({ numPages }) => {
@@ -24,4 +24,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Resume;

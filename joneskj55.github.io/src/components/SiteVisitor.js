@@ -70,82 +70,89 @@ export default class SiteVisitor extends Component {
 
   render() {
     return (
-      <div className="flex flex-1 justify-evenly">
-        <div className="container mx-auto px-6 pt-10">
-          <div className="sm:flex sm:mt-8">
-            <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-around">
-              <form onSubmit={this.onSubmit} className="flex flex-col">
-                <div className="overflow-hidden shadow sm:rounded-md">
-                  <div className="bg-gray-200 px-4 py-5 sm:p-6">
-                    <div className="grid grid-cols-6 gap-6">
-                      <div className="col-span-6 sm:col-span-3">
-                        <label
-                          htmlFor="name"
-                          className="block font-medium text-gray-700"
-                        >
-                          Name
-                        </label>
-                        <input
-                          type="text"
-                          value={this.state.name}
-                          onChange={this.createVisitorName}
-                          required
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-gray-700"
-                        />
-                      </div>
+      <main className="flex-grow mb-20 m-2 md:m-16">
+        <h1 className="text-5xl md:text-7xl font-bold text-center">Visitors</h1>
+        <br />
+        <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
+          Add your info to the table.
+        </p>
+        <div className="flex flex-1 justify-evenly">
+          <div className="container mx-auto px-6 pt-10">
+            <div className="sm:flex sm:mt-8">
+              <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-around">
+                <form onSubmit={this.onSubmit} className="flex flex-col">
+                  <div className="overflow-hidden shadow sm:rounded-md">
+                    <div className="bg-gray-200 px-4 py-5 sm:p-6">
+                      <div className="grid grid-cols-6 gap-6">
+                        <div className="col-span-6 sm:col-span-3">
+                          <label
+                            htmlFor="name"
+                            className="block font-medium text-gray-700"
+                          >
+                            Name
+                          </label>
+                          <input
+                            type="text"
+                            value={this.state.name}
+                            onChange={this.createVisitorName}
+                            required
+                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-gray-700"
+                          />
+                        </div>
 
-                      <div className="col-span-6 sm:col-span-3">
-                        <label
-                          htmlFor="email-address"
-                          className="block font-medium text-gray-700"
-                        >
-                          Email address
-                        </label>
-                        <input
-                          type="email"
-                          value={this.state.email}
-                          onChange={this.createVisitorEmail}
-                          required
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-gray-700"
-                        />
+                        <div className="col-span-6 sm:col-span-3">
+                          <label
+                            htmlFor="email-address"
+                            className="block font-medium text-gray-700"
+                          >
+                            Email address
+                          </label>
+                          <input
+                            type="email"
+                            value={this.state.email}
+                            onChange={this.createVisitorEmail}
+                            required
+                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-gray-700"
+                          />
+                        </div>
                       </div>
                     </div>
+                    <div className="bg-gray-400 px-4 py-3 text-right sm:px-6">
+                      <button
+                        type="submit"
+                        className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                      >
+                        Add Name
+                      </button>
+                    </div>
                   </div>
-                  <div className="bg-gray-400 px-4 py-3 text-right sm:px-6">
-                    <button
-                      type="submit"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                    >
-                      Add Name
-                    </button>
-                  </div>
-                </div>
-              </form>
+                </form>
 
-              <div className="flex flex-col h-full w-full md:w-3/5 font-mono">
-                <div className="rounded border border-transparent overflow-hidden ">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="bg-gray-200">
-                        <th className="p-1 sm:p-4 text-center text-gray-600">
-                          Name
-                        </th>
-                        <th className="p-1 sm:p-4 text-center text-gray-600">
-                          Email
-                        </th>
-                        <th className="p-1 sm:p-4 text-center text-gray-600">
-                          Date
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-center">{this.DataTable()}</tbody>
-                  </table>
+                <div className="flex flex-col h-full w-full md:w-3/5 font-mono">
+                  <div className="rounded border border-transparent overflow-hidden ">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="bg-gray-200">
+                          <th className="p-1 sm:p-4 text-center text-gray-600">
+                            Name
+                          </th>
+                          <th className="p-1 sm:p-4 text-center text-gray-600">
+                            Email
+                          </th>
+                          <th className="p-1 sm:p-4 text-center text-gray-600">
+                            Date
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-center">{this.DataTable()}</tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     );
   }
 }

@@ -3,6 +3,7 @@ import { SiMongodb, SiExpress, SiReact, SiNodedotjs } from "react-icons/si";
 import Resume from "./Resume";
 import Projects from "./Projects";
 import SiteVisitor from "./SiteVisitor";
+import OpenSource from "./OpenSource";
 
 export default class HomePage extends Component {
   render() {
@@ -30,6 +31,7 @@ export default class HomePage extends Component {
           full-stack capabilities. So please, poke around the site, check out my
           socials, and feel free to reach out!{" "}
         </p>
+        <OpenSource />
         <Projects />
         <Resume />
         <SiteVisitor />

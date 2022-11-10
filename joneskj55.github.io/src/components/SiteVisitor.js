@@ -80,8 +80,8 @@ export default class SiteVisitor extends Component {
                     <div className="grid grid-cols-6 gap-6">
                       <div className="col-span-6 sm:col-span-3">
                         <label
-                          htmlFor="first-name"
-                          className="block text-sm font-medium text-gray-700"
+                          htmlFor="name"
+                          className="block font-medium text-gray-700"
                         >
                           Name
                         </label>
@@ -97,7 +97,7 @@ export default class SiteVisitor extends Component {
                       <div className="col-span-6 sm:col-span-3">
                         <label
                           htmlFor="email-address"
-                          className="block text-sm font-medium text-gray-700"
+                          className="block font-medium text-gray-700"
                         >
                           Email address
                         </label>
@@ -122,8 +122,8 @@ export default class SiteVisitor extends Component {
                 </div>
               </form>
 
-              <div className="flex flex-col h-full w-full md:w-3/5">
-                <div className="rounded overflow-hidden border">
+              <div className="flex flex-col h-full w-full md:w-3/5 font-mono">
+                <div className="rounded border border-transparent overflow-hidden ">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-gray-200">

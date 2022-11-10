@@ -6,10 +6,10 @@ import HomePage from "./components/HomePage";
 
 function App() {
   return (
-    <div>
+    <div className="font-mono">
       <Router>
         <header>
-          <nav className="sticky top-0 mx-auto p-5 font-sans flex justify-between py-4 px-6 bg-gray-200 shadow sm:items-baseline w-full mb-14">
+          <nav className="sticky top-0 mx-auto p-5 flex justify-between py-4 px-6 bg-gray-200 shadow sm:items-baseline w-full mb-14">
             <div>
               <Link
                 to={"/"}

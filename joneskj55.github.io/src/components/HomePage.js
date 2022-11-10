@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs } from "react-icons/si";
+import {
+  SiMongodb,
+  SiExpress,
+  SiReact,
+  SiNodedotjs,
+  SiTailwindcss,
+} from "react-icons/si";
 import Resume from "./Resume";
 import Projects from "./Projects";
 import SiteVisitor from "./SiteVisitor";
@@ -13,7 +19,8 @@ export default class HomePage extends Component {
         <br />
         <p className="flex flex-1 justify-center text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Welcome to my <SiMongodb className="ml-4" /> <SiExpress />
-          <SiReact /> <SiNodedotjs className="mr-4" /> stack site!
+          <SiReact /> <SiNodedotjs /> <SiTailwindcss className="mr-4" /> stack
+          site!
         </p>
         <p className="p-14 ">
           I'm Kevin Jones, Veteran & Software Engineer. This intentionally
@@ -29,7 +36,7 @@ export default class HomePage extends Component {
           specifically the links to projects and resume could have all been done
           through the client side. However, the goal of this site is to display
           full-stack capabilities. So please, poke around the site, check out my
-          socials, and feel free to reach out!{" "}
+          socials, add your name to the table, and feel free to reach out!{" "}
         </p>
         <OpenSource />
         <Projects />

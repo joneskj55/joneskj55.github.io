@@ -3,14 +3,14 @@ import React, { Component } from "react";
 export default class Projects extends Component {
   render() {
     return (
-      <main class="flex-grow mb-20 m-2 md:m-16">
-        <h1 class="text-5xl md:text-7xl font-bold text-center">Projects</h1>
+      <main className="flex-grow mb-20 m-2 md:m-16">
+        <h1 className="text-5xl md:text-7xl font-bold text-center">Projects</h1>
         <br />
-        <p class="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
+        <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Personal, open-source, bootcamp & university projects.
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 p-8"></div>
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 p-8"></div>
       </main>
     );
   }

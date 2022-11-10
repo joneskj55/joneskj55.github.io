@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import resume from "../resumeKevinJones.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -15,11 +17,18 @@ class Resume extends Component {
     const { pageNumber } = this.state;
 
     return (
-      <div className="flex justify-center">
-        <Document file={resume} onLoadSuccess={this.onDocumentLoadSuccess}>
-          <Page pageNumber={pageNumber} width={1000} />
-        </Document>
-      </div>
+      <main className="flex-grow md:m-16">
+        <h1 className="text-5xl md:text-7xl font-bold text-center">Resume</h1>
+        <br />
+        <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
+          Professional & school experience.
+        </p>
+        <div className="flex justify-center">
+          <Document file={resume} onLoadSuccess={this.onDocumentLoadSuccess}>
+            <Page pageNumber={pageNumber} width={1000} />
+          </Document>
+        </div>
+      </main>
     );
   }
 }

@@ -5,6 +5,7 @@ import SiteVisitor from "./components/SiteVisitor";
 import HomePage from "./components/HomePage";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
           </Switch>
         </div>
       </Router>
+      <Footer />
     </div>
   );
 }

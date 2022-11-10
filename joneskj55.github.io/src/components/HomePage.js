@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { FaGithub, FaDev, FaLinkedin } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiReact, SiNodedotjs } from "react-icons/si";
+import Resume from "./Resume";
+import Projects from "./Projects";
+import SiteVisitor from "./SiteVisitor";
 
 export default class HomePage extends Component {
   render() {
@@ -28,18 +30,9 @@ export default class HomePage extends Component {
           full-stack capabilities. So please, poke around the site, check out my
           socials, and feel free to reach out!{" "}
         </p>
-        <div className="flex flex-1 justify-center">
-          <a href={"https://linkedin.com/in/joneskj55"} target={"_blank"}>
-            {" "}
-            <FaLinkedin className="text-5xl mr-8 hover:text-gray-400" />
-          </a>
-          <a href={"https://github.com/joneskj55"} target={"_blank"}>
-            <FaGithub className="text-5xl mr-8 hover:text-gray-400" />
-          </a>
-          <a href={"https://dev.to/joneskj55"} target={"_blank"}>
-            <FaDev className="text-5xl hover:text-gray-400" />
-          </a>
-        </div>
+        <Projects />
+        <Resume />
+        <SiteVisitor />
       </main>
     );
   }

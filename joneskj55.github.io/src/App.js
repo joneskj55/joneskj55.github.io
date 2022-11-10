@@ -3,6 +3,8 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SiteVisitor from "./components/SiteVisitor";
 import HomePage from "./components/HomePage";
+import Resume from "./components/Resume";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -18,13 +20,24 @@ function App() {
                 Kevin Jones
               </Link>
             </div>
-
             <ul className="flex flex-row">
               <Link
-                to={"/create-visitor"}
+                to={"/resume"}
                 className="pr-5 text-lg text-gray-600 hover:text-gray-500"
               >
-                Site Visitors
+                Resume
+              </Link>
+              <Link
+                to={"/projects"}
+                className="pr-5 text-lg text-gray-600 hover:text-gray-500"
+              >
+                Projects
+              </Link>
+              <Link
+                to={"/visitors"}
+                className="pr-5 text-lg text-gray-600 hover:text-gray-500"
+              >
+                Visitors
               </Link>
             </ul>
           </nav>
@@ -38,7 +51,17 @@ function App() {
             />
             <Route
               exact
-              path="/create-visitor"
+              path="/resume"
+              component={(props) => <Resume {...props} />}
+            />
+            <Route
+              exact
+              path="/projects"
+              component={(props) => <Projects {...props} />}
+            />
+            <Route
+              exact
+              path="/visitors"
               component={(props) => <SiteVisitor {...props} />}
             />
           </Switch>

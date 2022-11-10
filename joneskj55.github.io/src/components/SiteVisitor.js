@@ -90,7 +90,7 @@ export default class SiteVisitor extends Component {
                           value={this.state.name}
                           onChange={this.createVisitorName}
                           required
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-gray-700"
                         />
                       </div>
 
@@ -106,7 +106,7 @@ export default class SiteVisitor extends Component {
                           value={this.state.email}
                           onChange={this.createVisitorEmail}
                           required
-                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-gray-700"
                         />
                       </div>
                     </div>

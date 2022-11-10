@@ -4,6 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const visitorRoute = require("../server/routes/visitors");
+const projectRoute = require("../server/routes/projects");
 
 mongoose
   .connect("mongodb://127.0.0.1:27017/mydatabase")
@@ -26,6 +27,7 @@ app.use(
 );
 app.use(cors());
 app.use("/visitors", visitorRoute);
+app.use("/projects", projectRoute);
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {

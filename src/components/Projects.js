@@ -36,7 +36,7 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <main className="flex-grow mb-20 m-2 md:m-16">
+      <main className="flex-grow mb-20 sm:m-2 md:m-16">
         <h1 className="text-5xl md:text-7xl font-bold text-center">Projects</h1>
         <br/>
         <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
@@ -54,7 +54,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     Employee Management
@@ -78,7 +78,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     Bio Site
@@ -102,7 +102,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     What to Eat
@@ -127,7 +127,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     Bob's Computer Repair
@@ -151,7 +151,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     JavaScript Quiz
@@ -175,7 +175,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     GitHub Stats
@@ -199,7 +199,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     BCRS
@@ -225,7 +225,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     GPA Calculator
@@ -250,7 +250,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     In-N-Out Books
@@ -273,7 +273,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     Nodebucket
@@ -296,7 +296,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     Composer App
@@ -321,7 +321,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     Simple Simon
@@ -345,7 +345,7 @@ export default class Projects extends Component {
               <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end sm:invisible group-hover:visible">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
                   <BsBoxArrowUpRight/>
                 </span>
                     Weather Map

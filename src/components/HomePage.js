@@ -22,7 +22,7 @@ export default class HomePage extends Component {
           <SiReact/> <SiNodedotjs/> <SiTailwindcss className="mr-4"/> stack
           site!
         </p>
-        <p className="p-14 ">
+        <p className="p-8 sm:p-14 ">
           I'm Kevin Jones, Veteran & Software Engineer. This intentionally
           over-engineered site is designed to display my full-stack
           capabilities. This site was built using the MERN stack with Tailwind

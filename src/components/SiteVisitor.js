@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import axios from "axios";
 import VisitorTableRow from "./VisitorTableRow";
 
@@ -19,11 +19,11 @@ export default class SiteVisitor extends Component {
   }
 
   createVisitorName(e) {
-    this.setState({ name: e.target.value });
+    this.setState({name: e.target.value});
   }
 
   createVisitorEmail(e) {
-    this.setState({ email: e.target.value });
+    this.setState({email: e.target.value});
   }
 
   onSubmit(e) {
@@ -34,7 +34,7 @@ export default class SiteVisitor extends Component {
       date: this.state.date,
     };
     axios
-      .post("http://localhost:4000/visitors/create-visitor", visitorObject)
+      .post("https://kevinjones.engineer/visitors/create-visitor", visitorObject)
       .then((res) => console.log(res.data));
     this.setState({
       name: "",
@@ -42,7 +42,7 @@ export default class SiteVisitor extends Component {
       date: "",
     });
     // auto load data to table after submit without refresh
-    axios.get("http://localhost:4000/visitors/").then((res) => {
+    axios.get("https://kevinjones.engineer/visitors/").then((res) => {
       this.setState({
         visitors: res.data,
       });
@@ -51,7 +51,7 @@ export default class SiteVisitor extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:4000/visitors/")
+      .get("https://kevinjones.engineer/visitors/")
       .then((res) => {
         this.setState({
           visitors: res.data,
@@ -64,7 +64,7 @@ export default class SiteVisitor extends Component {
 
   DataTable() {
     return this.state.visitors.map((res, i) => {
-      return <VisitorTableRow obj={res} key={i} />;
+      return <VisitorTableRow obj={res} key={i}/>;
     });
   }
 
@@ -72,7 +72,7 @@ export default class SiteVisitor extends Component {
     return (
       <main className="flex-grow mb-20 m-2 md:m-16">
         <h1 className="text-5xl md:text-7xl font-bold text-center">Visitors</h1>
-        <br />
+        <br/>
         <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Add your info to the table.
         </p>
@@ -132,17 +132,17 @@ export default class SiteVisitor extends Component {
                   <div className="rounded border border-transparent overflow-hidden ">
                     <table className="w-full">
                       <thead>
-                        <tr className="bg-gray-200">
-                          <th className="p-1 sm:p-4 text-center text-gray-600">
-                            Name
-                          </th>
-                          <th className="p-1 sm:p-4 text-center text-gray-600">
-                            Email
-                          </th>
-                          <th className="p-1 sm:p-4 text-center text-gray-600">
-                            Date
-                          </th>
-                        </tr>
+                      <tr className="bg-gray-200">
+                        <th className="p-1 sm:p-4 text-center text-gray-600">
+                          Name
+                        </th>
+                        <th className="p-1 sm:p-4 text-center text-gray-600">
+                          Email
+                        </th>
+                        <th className="p-1 sm:p-4 text-center text-gray-600">
+                          Date
+                        </th>
+                      </tr>
                       </thead>
                       <tbody className="text-center">{this.DataTable()}</tbody>
                     </table>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import axios from "axios";
 import ProjectTile from "./ProjectTile";
 
@@ -16,7 +16,7 @@ export default class Projects extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:4000/projects/")
+      .get("https://kevinjones.engineer/projects/")
       .then((res) => {
         this.setState({
           projects: res.data,
@@ -29,7 +29,7 @@ export default class Projects extends Component {
 
   DataTable() {
     return this.state.projects.map((res, i) => {
-      return <ProjectTile obj={res} key={i} />;
+      return <ProjectTile obj={res} key={i}/>;
     });
   }
 
@@ -37,7 +37,7 @@ export default class Projects extends Component {
     return (
       <main className="flex-grow mb-20 m-2 md:m-16">
         <h1 className="text-5xl md:text-7xl font-bold text-center">Projects</h1>
-        <br />
+        <br/>
         <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Personal, open-source, bootcamp & university projects.
         </p>

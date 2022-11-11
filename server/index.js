@@ -3,11 +3,14 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
+const dotenv = require("dotenv")
+dotenv.config()
+
 const visitorRoute = require("../server/routes/visitors");
 const projectRoute = require("../server/routes/projects");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/mydatabase")
+  .connect(process.env.MONGO)
   .then((x) => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`

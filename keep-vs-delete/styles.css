@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Secular+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: ivory;
+  background-color: #000105;
+  background-image: url("img/inspiration-geometry.webp");
+}
+
+.main {
+  text-align: center;
+}
+
+.main-header {
+  font-size: 5em;
+  margin-bottom: -50px;
+}
+
+.sub-header {
+  font-size: 3em;
+}
+
+.social {
+  color: ivory;
+  font-size: 3em;
+}
+
+.social:hover {
+  color: lightgrey;
+}
+
+.social-media-div {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+#github-icon {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+span {
+  color: #00cfff;
+}
+
+/*PROJECTS*/
+.centered-ivory {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: ivory;
+}
+
+.centered-black {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: black;
+}
+
+/*ADD TEXT TO CLICK AT BOTTOM LEFT*/
+.bottom-left-white {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: ivory;
+  font-size: 16px;
+}
+
+.bottom-left-black {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: black;
+  font-size: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: black;
+  font-size: 16px;
+}
+
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+  width: 400px;
+}
+
+/*HOVER ACTION*/
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-cell:hover .image {
+  opacity: 0.3;
+}
+
+.carousel-cell:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  color: ivory;
+  font-size: 30px;
+  padding: 16px 32px;
+  border-radius: 15px;
+  width: max-content;
+}
+
+.sub-text {
+  font-size: 15px;
+  border-radius: 0;
+  background-color: inherit;
+  color: ivory;
+}
+
+.middle-svg {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-svg {
+  color: ivory;
+  font-size: 30px;
+  padding: 16px 32px;
+  width: max-content;
+}
+
+.angular {
+  color: #be012e;
+}
+
+.ang-mat {
+  color: #3f51b5;
+}
+
+.typescript {
+  color: #2f74c0;
+}
+
+.bootstrap {
+  color: #533b78;
+}
+
+.javascript {
+  color: #f7e016;
+}
+
+.css {
+  color: #284de4;
+}
+
+.sass {
+  color: #bf4080;
+}
+
+.html {
+  color: #e44d26;
+}
+
+.java {
+  color: #b07219;
+}
+
+.react {
+  color: #61dafb;
+}
+
+.jam {
+  color: #f0037f;
+}
+
+.mongo {
+  color: #09804c;
+}
+
+.node {
+  color: #43853d;
+}
+
+.tailwind {
+  color: #45b6d4;
+}
+
+.ejs {
+  color: #a91f50;
+}
+
+.jquery {
+  color: #2969ae;
+}
+
+.json {
+  color: green;
+}
+
+.knockout {
+  color: #c43c02;
+}
+
+.draw {
+  color: #e88307;
+}
+
+.open-weather {
+  color: #ea6e4b;
+}
+
+.g-red {
+  color: #ed5848;
+}
+
+.g-dark-blue {
+  color: #3786eb;
+}
+
+.g-gold {
+  color: #f8c610;
+}
+
+.g-light-blue {
+  color: #5695f6;
+}
+
+.g-green {
+  color: #48b564;
+}
+
+.umlet {
+  color: #f10202;
+}
+
+.chartjs {
+  color: #f36385;
+}
+
+.button {
+  background-color: #00cfff;
+  color: black;
+  border: 2px solid black;
+  display: block;
+  margin: 35px auto 55px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.button:hover {
+  background-color: #00cfffdb;
+  color: ivory;
+}
+
+.error {
+  font-size: 10em;
+  color: #f7e016;
+}
+
+video {
+  width: 50%;
+}
+
+/*ALL BELOW STYLES FOR IMAGE EXPANSION ON CLICK*/
+/* Styles the thumbnail */
+
+a.lightbox img {
+  height: 150px;
+  border: 3px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  margin: 94px 20px 20px 20px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0;
+  max-width: 0;
+  border: 3px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
+.lightbox-target:target img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+  top: 0;
+}
+/*END IMAGE EXPANSION*/
+
+@media (max-width: 414px) {
+  .main-header {
+    font-size: 3.5em;
+  }
+
+  .sub-header {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-cell img {
+    height: 300px;
+  }
+
+  .bottom-left-white {
+    display: none;
+  }
+
+  .bottom-left-black {
+    display: none;
+  }
+
+  .top-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  #github-icon {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .main-header {
+    font-size: 4em;
+  }
+
+  .sub-header {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    background-color: #00cfff;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .middle {
+    display: none;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .sponsor {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .social-media-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #github-icon {
+    padding: 0;
+  }
+}

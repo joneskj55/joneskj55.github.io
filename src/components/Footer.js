@@ -9,6 +9,7 @@ export default class Footer extends Component {
           href={"https://linkedin.com/in/joneskj55"}
           target={"_blank"}
           rel="noreferrer"
+          aria-label="linkedin"
         >
           {" "}
           <FaLinkedin className="text-5xl mr-8 hover:text-gray-400" />
@@ -17,10 +18,16 @@ export default class Footer extends Component {
           href={"https://github.com/joneskj55"}
           target={"_blank"}
           rel="noreferrer"
+          aria-label="github"
         >
           <FaGithub className="text-5xl mr-8 hover:text-gray-400" />
         </a>
-        <a href={"https://dev.to/joneskj55"} target={"_blank"} rel="noreferrer">
+        <a
+          href={"https://dev.to/joneskj55"}
+          target={"_blank"}
+          rel="noreferrer"
+          aria-label="dev.to"
+        >
           <FaDev className="text-5xl hover:text-gray-400" />
         </a>
       </footer>

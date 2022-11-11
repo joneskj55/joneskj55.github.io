@@ -1,10 +1,10 @@
-import React, {Component} from "react";
-import {BsBoxArrowUpRight} from "react-icons/bs";
+import React, { Component } from "react";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 export default class ProjectTile extends Component {
   render() {
     return (
-      <ul className="hover:shadow-xl">
+      <div className="hover:shadow-xl">
         <a
           href={this.props.obj.url}
           target={"_blank"}
@@ -15,7 +15,7 @@ export default class ProjectTile extends Component {
             <div className="px-6 py-4 flex-1 group">
               <div className="font-bold text-xl mb-2">
                 <span className="flex flex-1 justify-end lg:invisible group-hover:visible">
-                  <BsBoxArrowUpRight/>
+                  <BsBoxArrowUpRight />
                 </span>
                 {this.props.obj.title}
               </div>
@@ -25,7 +25,7 @@ export default class ProjectTile extends Component {
             </div>
           </div>
         </a>
-      </ul>
+      </div>
     );
   }
 }

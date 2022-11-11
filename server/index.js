@@ -3,14 +3,14 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
-const dotenv = require("dotenv")
-dotenv.config()
+const dotenv = require("dotenv");
+dotenv.config();
 
 const visitorRoute = require("../server/routes/visitors");
 const projectRoute = require("../server/routes/projects");
 
 mongoose
-  .connect(process.env.MONGO)
+  .connect(process.env.MONGODB_URI)
   .then((x) => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`

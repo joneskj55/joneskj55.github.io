@@ -25,7 +25,7 @@ function App() {
             <ul className="flex flex-row">
               <Link
                 to={"/resume"}
-                className="pr-5 text-lg text-gray-600 hover:text-gray-500"
+                className="pr-5 text-lg text-gray-600 hover:text-gray-500 invisible lg:visible"
               >
                 Resume
               </Link>

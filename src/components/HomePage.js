@@ -8,7 +8,7 @@ import {
 } from "react-icons/si";
 import Resume from "./Resume";
 import Projects from "./Projects";
-import SiteVisitor from "./SiteVisitor";
+// import SiteVisitor from "./SiteVisitor";
 import OpenSource from "./OpenSource";
 
 export default class HomePage extends Component {
@@ -28,20 +28,18 @@ export default class HomePage extends Component {
           capabilities. This site was built using the MERN stack with Tailwind
           for styling. If you check out the links in the nav bar or simply scroll down the page you will find
           my resume/ work history. The projects section will provide some examples
-          of my work, all of which are live websites. In the
-          visitors section you can add your info to the table of visitors of this
-          site. The front end of this app is built with React and Tailwind.
+          of my work, all of which are live websites. The front end of this app is built with React and Tailwind.
           Express and Node.js are used on the backend and MongoDB is the
           database used for storage. As you probably know, most of this stuff,
           specifically the links to projects could have all been done
           through the client side. However, the goal of this site is to display
           full-stack capabilities. So please, poke around the site, check out my
-          socials, add your name to the table, and feel free to reach out!{" "}
+          socials, and feel free to reach out!{" "}
         </p>
         <OpenSource/>
         <Projects/>
         <Resume/>
-        <SiteVisitor/>
+        {/*<SiteVisitor/>*/}
       </main>
     );
   }

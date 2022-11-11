@@ -34,7 +34,7 @@ export default class SiteVisitor extends Component {
       date: this.state.date,
     };
     axios
-      .post("https://kevinjones.engineer/visitors/create-visitor", visitorObject)
+      .post("http://localhost:4000/visitors/create-visitor", visitorObject)
       .then((res) => console.log(res.data));
     this.setState({
       name: "",
@@ -42,7 +42,7 @@ export default class SiteVisitor extends Component {
       date: "",
     });
     // auto load data to table after submit without refresh
-    axios.get("https://kevinjones.engineer/visitors/").then((res) => {
+    axios.get("http://localhost:4000/visitors/").then((res) => {
       this.setState({
         visitors: res.data,
       });
@@ -51,7 +51,7 @@ export default class SiteVisitor extends Component {
 
   componentDidMount() {
     axios
-      .get("https://kevinjones.engineer/visitors/")
+      .get("http://localhost:4000/visitors/")
       .then((res) => {
         this.setState({
           visitors: res.data,

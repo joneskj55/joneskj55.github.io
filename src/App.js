@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import SiteVisitor from "./components/SiteVisitor";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+// import SiteVisitor from "./components/SiteVisitor";
 import HomePage from "./components/HomePage";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
@@ -12,7 +12,8 @@ function App() {
     <div className="font-mono">
       <Router>
         <header>
-          <nav className="sticky top-0 mx-auto p-5 flex justify-between py-4 px-6 bg-gray-200 shadow sm:items-baseline w-full mb-14">
+          <nav
+            className="sticky top-0 mx-auto p-5 flex justify-between py-4 px-6 bg-gray-200 shadow sm:items-baseline w-full mb-14">
             <div>
               <Link
                 to={"/"}
@@ -34,12 +35,12 @@ function App() {
               >
                 Projects
               </Link>
-              <Link
-                to={"/visitors"}
-                className="pr-5 text-lg text-gray-600 hover:text-gray-500"
-              >
-                Visitors
-              </Link>
+              {/*<Link*/}
+              {/*  to={"/visitors"}*/}
+              {/*  className="pr-5 text-lg text-gray-600 hover:text-gray-500"*/}
+              {/*>*/}
+              {/*  Visitors*/}
+              {/*</Link>*/}
             </ul>
           </nav>
         </header>
@@ -60,15 +61,15 @@ function App() {
               path="/projects"
               component={(props) => <Projects {...props} />}
             />
-            <Route
-              exact
-              path="/visitors"
-              component={(props) => <SiteVisitor {...props} />}
-            />
+            {/*<Route*/}
+            {/*  exact*/}
+            {/*  path="/visitors"*/}
+            {/*  component={(props) => <SiteVisitor {...props} />}*/}
+            {/*/>*/}
           </Switch>
         </div>
       </Router>
-      <Footer />
+      <Footer/>
     </div>
   );
 }

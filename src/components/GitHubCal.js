@@ -13,6 +13,10 @@ export default class GitHubCal extends Component {
           level3: "#26a641",
           level4: "#39d353",
         }}
+        hideTotalCount={false}
+        hideColorLegend={true}
+        hideMonthLabels={false}
+        showWeekdayLabels={false}
       />
     );
   }

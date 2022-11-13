@@ -16,7 +16,7 @@ export default class Projects extends Component {
 
   componentDidMount() {
     axios
-      .get(process.env.PORT)
+      .get("/projects")
       .then((res) => {
         this.setState({
           projects: res.data,

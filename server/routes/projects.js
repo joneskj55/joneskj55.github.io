@@ -16,29 +16,14 @@ router.route("/create-project").post((req, res, next) => {
 });
 
 // get project
-// router.route("/").get((req, res) => {
-//   projectSchema.find((error, data) => {
-//     if (error) {
-//       return next(error);
-//     } else {
-//       res.json(data);
-//     }
-//   });
-// });
-
-router.get("/projects", async (req, res, next) => {
-  try {
-    const projects = await projectSchema.find();
-
-    return res.status(200).json({
-      success: true,
-      count: projects.length,
-      data: projects,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json({ error: "server error" });
-  }
+router.route("/").get((req, res) => {
+  projectSchema.find((error, data) => {
+    if (error) {
+      return next(error);
+    } else {
+      res.json(data);
+    }
+  });
 });
 
 module.exports = router;

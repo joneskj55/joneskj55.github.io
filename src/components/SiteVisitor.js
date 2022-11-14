@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import axios from "axios";
 import VisitorTableRow from "./VisitorTableRow";
 
@@ -19,11 +19,11 @@ export default class SiteVisitor extends Component {
   }
 
   createVisitorName(e) {
-    this.setState({name: e.target.value});
+    this.setState({ name: e.target.value });
   }
 
   createVisitorEmail(e) {
-    this.setState({email: e.target.value});
+    this.setState({ email: e.target.value });
   }
 
   onSubmit(e) {
@@ -34,7 +34,10 @@ export default class SiteVisitor extends Component {
       date: this.state.date,
     };
     axios
-      .post("http://localhost:4000/visitors/create-visitor", visitorObject)
+      .post(
+        "https://portfolio-backend-alpha-rouge.vercel.app/visitors/create-visitor",
+        visitorObject
+      )
       .then((res) => console.log(res.data));
     this.setState({
       name: "",
@@ -42,16 +45,18 @@ export default class SiteVisitor extends Component {
       date: "",
     });
     // auto load data to table after submit without refresh
-    axios.get("http://localhost:4000/visitors/").then((res) => {
-      this.setState({
-        visitors: res.data,
+    axios
+      .get("https://portfolio-backend-alpha-rouge.vercel.app/visitors")
+      .then((res) => {
+        this.setState({
+          visitors: res.data,
+        });
       });
-    });
   }
 
   componentDidMount() {
     axios
-      .get("http://localhost:4000/visitors/")
+      .get("https://portfolio-backend-alpha-rouge.vercel.app/visitors")
       .then((res) => {
         this.setState({
           visitors: res.data,
@@ -64,7 +69,7 @@ export default class SiteVisitor extends Component {
 
   DataTable() {
     return this.state.visitors.map((res, i) => {
-      return <VisitorTableRow obj={res} key={i}/>;
+      return <VisitorTableRow obj={res} key={i} />;
     });
   }
 
@@ -72,17 +77,20 @@ export default class SiteVisitor extends Component {
     return (
       <main className="flex-grow mb-20 m-2 md:m-16">
         <h1 className="text-5xl md:text-7xl font-bold text-center">Visitors</h1>
-        <br/>
+        <br />
         <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Add your info to the table.
         </p>
         <div className="flex flex-1 justify-evenly">
           <div className="container mx-auto px-6 pt-10">
             <div className="sm:flex sm:mt-8">
-              <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-around">
-                <form onSubmit={this.onSubmit} className="flex flex-col">
+              <div className="mt-8 sm:mt-0 sm:w-full flex flex-col">
+                <form
+                  onSubmit={this.onSubmit}
+                  className="flex flex-col h-full w-full pb-14"
+                >
                   <div className="overflow-hidden shadow sm:rounded-md">
-                    <div className="bg-gray-200 px-4 py-5 sm:p-6">
+                    <div className="bg-gray-300 px-4 py-5 sm:p-6">
                       <div className="grid grid-cols-6 gap-6">
                         <div className="col-span-6 sm:col-span-3">
                           <label
@@ -93,6 +101,7 @@ export default class SiteVisitor extends Component {
                           </label>
                           <input
                             type="text"
+                            id="name"
                             value={this.state.name}
                             onChange={this.createVisitorName}
                             required
@@ -109,6 +118,7 @@ export default class SiteVisitor extends Component {
                           </label>
                           <input
                             type="email"
+                            id="email-address"
                             value={this.state.email}
                             onChange={this.createVisitorEmail}
                             required
@@ -128,21 +138,21 @@ export default class SiteVisitor extends Component {
                   </div>
                 </form>
 
-                <div className="flex flex-col h-full w-full md:w-3/5 font-mono">
-                  <div className="rounded border border-transparent overflow-hidden ">
-                    <table className="w-full">
+                <div className="flex flex-col h-full w-full font-mono">
+                  <div className="rounded border border-transparent mt-8 sm:mt-0 sm:w-full flex flex-col">
+                    <table className="overflow-hidden shadow sm:rounded-md w-full">
                       <thead>
-                      <tr className="bg-gray-200">
-                        <th className="p-1 sm:p-4 text-center text-gray-600">
-                          Name
-                        </th>
-                        <th className="p-1 sm:p-4 text-center text-gray-600">
-                          Email
-                        </th>
-                        <th className="p-1 sm:p-4 text-center text-gray-600">
-                          Date
-                        </th>
-                      </tr>
+                        <tr className="bg-gray-300">
+                          <th className="p-1 sm:p-4 text-center text-gray-600">
+                            Name
+                          </th>
+                          <th className="p-1 sm:p-4 text-center text-gray-600">
+                            Email
+                          </th>
+                          <th className="p-1 sm:p-4 text-center text-gray-600">
+                            Date
+                          </th>
+                        </tr>
                       </thead>
                       <tbody className="text-center">{this.DataTable()}</tbody>
                     </table>

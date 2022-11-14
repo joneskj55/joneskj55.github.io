@@ -6,8 +6,8 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const visitorRoute = require("../server/routes/visitors");
-const projectRoute = require("../server/routes/projects");
+const visitorRoute = require("./routes/visitors");
+const projectRoute = require("./routes/projects");
 
 mongoose
   .connect(process.env.MONGODB_URI)
@@ -32,10 +32,10 @@ app.use(cors());
 app.use("/visitors", visitorRoute);
 app.use("/projects", projectRoute);
 
-// const port = process.env.PORT || 4000;
-// app.listen(port, () => {
-//   console.log("Connected to port " + port);
-// });
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+  console.log("Connected to port " + port);
+});
 
 app.use((req, res, next) => {
   next(createError(404));

@@ -6,8 +6,6 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const routes = require("./routes/routes");
-
 const visitorRoute = require("../server/routes/visitors");
 const projectRoute = require("../server/routes/projects");
 
@@ -30,17 +28,14 @@ app.use(
     extended: true,
   })
 );
-
-app.use("/api", routes);
-
 app.use(cors());
-// app.use("/visitors", visitorRoute);
-// app.use("/projects", projectRoute);
+app.use("/visitors", visitorRoute);
+app.use("/projects", projectRoute);
 
-const port = process.env.PORT || 4000;
-app.listen(port, () => {
-  console.log("Connected to port " + port);
-});
+// const port = process.env.PORT || 4000;
+// app.listen(port, () => {
+//   console.log("Connected to port " + port);
+// });
 
 app.use((req, res, next) => {
   next(createError(404));

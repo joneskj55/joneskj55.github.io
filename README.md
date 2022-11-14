@@ -1,3 +1,6 @@
-# Personal portfolio.
+# Personal portfolio (Frontend portion).
 
-Built with MongoDB, Express, React, Node & Tailwind.
+Built with React & Tailwind.
+
+Server-side (Mongo, Express & Node) code for this site can be
+found [here](https://github.com/joneskj55/portfolio-backend).

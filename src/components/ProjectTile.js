@@ -19,7 +19,7 @@ export default class ProjectTile extends Component {
                 </span>
                 {this.props.obj.title}
               </div>
-              <p className="text-gray-400 text-base">
+              <p className="text-gray-400 text-base font-thin">
                 {this.props.obj.description}
               </p>
             </div>

@@ -17,7 +17,7 @@ export default class HomePage extends Component {
       <main className="flex-grow mb-20 m-2 md:m-16">
         <h1 className="text-5xl md:text-7xl font-bold text-center">Hello 👋🏾</h1>
         <br />
-        <p className="flex flex-1 justify-center text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
+        <p className="flex flex-1 justify-center sm:text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Welcome to my{" "}
           <span className="visible sm:hidden">&nbsp;MERN&nbsp;</span>
           <SiMongodb className="ml-4 hidden sm:block" />{" "}

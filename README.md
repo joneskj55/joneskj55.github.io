@@ -1,4 +1,4 @@
-# Personal portfolio (Frontend portion).
+# Personal portfolio.
 
 Built with React & Tailwind.
 

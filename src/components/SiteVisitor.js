@@ -82,9 +82,9 @@ export default class SiteVisitor extends Component {
           Add your info to the table.
         </p>
         <div className="flex flex-1 justify-evenly">
-          <div className="container mx-auto px-6 pt-10">
-            <div className="sm:flex sm:mt-8">
-              <div className="mt-8 sm:mt-0 sm:w-full flex flex-col">
+          <div className="container mx-auto">
+            <div className="sm:flex justify-center">
+              <div className="mt-8 sm:mt-0 flex flex-col">
                 <form
                   onSubmit={this.onSubmit}
                   className="flex flex-col h-full w-full pb-14"

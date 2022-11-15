@@ -27,7 +27,7 @@ export default class SiteVisitor extends Component {
   }
 
   onSubmit(e) {
-    // e.preventDefault();
+    e.preventDefault();
     const visitorObject = {
       name: this.state.name,
       email: this.state.email,

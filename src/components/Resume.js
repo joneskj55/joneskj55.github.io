@@ -20,7 +20,7 @@ class Resume extends Component {
       <main className="flex-grow md:m-16 hidden lg:block">
         <h1 className="text-5xl md:text-7xl font-bold text-center">Resume</h1>
         <br />
-        <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
+        <p className="text-2xl md:text-3xl font-light text-center">
           Professional & school experience.
         </p>
         <div className="flex justify-center sm:p-14">

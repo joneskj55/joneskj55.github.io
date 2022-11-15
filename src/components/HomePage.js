@@ -18,11 +18,15 @@ export default class HomePage extends Component {
         <h1 className="text-5xl md:text-7xl font-bold text-center">Hello 👋🏾</h1>
         <br />
         <p className="flex flex-1 justify-center text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
-          Welcome to my <SiMongodb className="ml-4" /> <SiExpress />
-          <SiReact /> <SiNodedotjs /> <SiTailwindcss className="mr-4" /> stack
-          site!
+          Welcome to my{" "}
+          <span className="visible sm:hidden">&nbsp;MERN&nbsp;</span>
+          <SiMongodb className="ml-4 hidden sm:block" />{" "}
+          <SiExpress className="hidden sm:block" />
+          <SiReact className="hidden sm:block" />{" "}
+          <SiNodedotjs className="hidden sm:block" />{" "}
+          <SiTailwindcss className="mr-4 hidden sm:block" /> stack site!
         </p>
-        <p className="p-8 sm:p-14 ">
+        <p className="p-8 sm:p-14">
           I'm Kevin Jones, Veteran & Software Engineer. This intentionally
           over-engineered site is designed to display my full-stack
           capabilities. This site was built using the MERN stack with Tailwind

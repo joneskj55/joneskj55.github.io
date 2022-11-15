@@ -67,7 +67,7 @@ export default class SiteVisitor extends Component {
       });
   }
 
-  DataTable() {
+  visitorData() {
     return this.state.visitors.map((res, i) => {
       return <VisitorTableRow obj={res} key={i} />;
     });
@@ -154,7 +154,9 @@ export default class SiteVisitor extends Component {
                           </th>
                         </tr>
                       </thead>
-                      <tbody className="text-center">{this.DataTable()}</tbody>
+                      <tbody className="text-center">
+                        {this.visitorData()}
+                      </tbody>
                     </table>
                   </div>
                 </div>

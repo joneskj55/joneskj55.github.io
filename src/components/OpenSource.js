@@ -12,7 +12,7 @@ export default class OpenSource extends Component {
         <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Recent open source activity.
         </p>
-        <div className="flex flex-1 justify-center">
+        <div className="flex flex-1 justify-center sm:pb-14">
           <a
             href={"https://github.com/joneskj55"}
             target={"_blank"}

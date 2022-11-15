@@ -89,14 +89,11 @@ export default class SiteVisitor extends Component {
                   onSubmit={this.onSubmit}
                   className="flex flex-col h-full w-full pb-14"
                 >
-                  <div className="overflow-hidden shadow sm:rounded-md">
-                    <div className="bg-gray-300 px-4 py-5 sm:p-6">
+                  <div className="overflow-hidden shadow-2xl sm:rounded-md">
+                    <div className="px-4 py-5 sm:p-6">
                       <div className="grid grid-cols-6 gap-6">
                         <div className="col-span-6 sm:col-span-3">
-                          <label
-                            htmlFor="name"
-                            className="block font-medium text-gray-700"
-                          >
+                          <label htmlFor="name" className="block font-medium">
                             Name
                           </label>
                           <input

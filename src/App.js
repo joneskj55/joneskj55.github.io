@@ -16,7 +16,7 @@ function App() {
             <div>
               <Link
                 to={"/"}
-                className="text-2xl text-gray-600 no-underline hover:text-gray-500"
+                className="text-base text-2xl text-gray-600 no-underline hover:text-gray-500"
               >
                 Kevin Jones
               </Link>
@@ -24,19 +24,19 @@ function App() {
             <div className="flex flex-row">
               <Link
                 to={"/resume"}
-                className="pr-5 text-lg text-gray-600 hover:text-gray-500 invisible lg:visible"
+                className="pr-5 text-sm text-lg text-gray-600 hover:text-gray-500 invisible lg:visible"
               >
                 Resume
               </Link>
               <Link
                 to={"/projects"}
-                className="pr-5 text-lg text-gray-600 hover:text-gray-500"
+                className="pr-5 text-sm text-lg text-gray-600 hover:text-gray-500"
               >
                 Projects
               </Link>
               <Link
                 to={"/visitors"}
-                className="pr-5 text-lg text-gray-600 hover:text-gray-500"
+                className="pr-5 text-sm text-lg text-gray-600 hover:text-gray-500"
               >
                 Visitors
               </Link>

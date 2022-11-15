@@ -105,14 +105,14 @@ export default class SiteVisitor extends Component {
                             value={this.state.name}
                             onChange={this.createVisitorName}
                             required
-                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#39d353] focus:ring-[#39d353] sm:text-sm text-gray-700"
+                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-slate-800 focus:ring-slate-800 sm:text-sm text-gray-700 bg-gray-300"
                           />
                         </div>
 
                         <div className="col-span-6 sm:col-span-3">
                           <label
                             htmlFor="email-address"
-                            className="block font-medium text-gray-700"
+                            className="block font-medium"
                           >
                             Email address
                           </label>
@@ -122,15 +122,15 @@ export default class SiteVisitor extends Component {
                             value={this.state.email}
                             onChange={this.createVisitorEmail}
                             required
-                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#39d353] focus:ring-[#39d353] sm:text-sm text-gray-700"
+                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-slate-800 focus:ring-slate-800 sm:text-sm text-gray-700 bg-gray-300"
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="bg-gray-400 px-4 py-3 text-right sm:px-6">
+                    <div className="px-4 py-3 text-right sm:px-6">
                       <button
                         type="submit"
-                        className="inline-flex justify-center rounded-md border border-transparent bg-[#166427] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#006d32] focus:outline-none focus:ring-2 focus:ring-[#006d32] focus:ring-offset-2"
+                        className="inline-flex justify-center rounded-md border border-transparent bg-slate-800 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2"
                       >
                         Add Name
                       </button>
@@ -140,7 +140,7 @@ export default class SiteVisitor extends Component {
 
                 <div className="flex flex-col h-full w-full text-xs sm:text-base">
                   <div className="rounded border border-transparent mt-8 sm:mt-0 sm:w-full flex flex-col">
-                    <table className="overflow-hidden shadow sm:rounded-md w-full">
+                    <table className="overflow-hidden shadow-2xl sm:rounded-md w-full">
                       <thead>
                         <tr className="bg-gray-300">
                           <th className="p-1 sm:p-4 text-center text-gray-600">

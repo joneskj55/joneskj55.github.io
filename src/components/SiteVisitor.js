@@ -138,7 +138,7 @@ export default class SiteVisitor extends Component {
                   </div>
                 </form>
 
-                <div className="flex flex-col h-full w-full font-mono overflow-auto">
+                <div className="flex flex-col h-full w-full font-mono text-xs sm:text-base">
                   <div className="rounded border border-transparent mt-8 sm:mt-0 sm:w-full flex flex-col">
                     <table className="overflow-hidden shadow sm:rounded-md w-full">
                       <thead>

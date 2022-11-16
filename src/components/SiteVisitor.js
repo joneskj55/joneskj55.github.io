@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import VisitorTableRow from "./VisitorTableRow";
-import Confetti from "./Confetti";
 
 export default class SiteVisitor extends Component {
   constructor(props) {
@@ -40,7 +39,7 @@ export default class SiteVisitor extends Component {
         "https://portfolio-backend-alpha-rouge.vercel.app/visitors/create-visitor",
         visitorObject
       )
-      .then((res) =>
+      .then(() =>
         axios
           .get("https://portfolio-backend-alpha-rouge.vercel.app/visitors")
           .then((res) => {
@@ -68,10 +67,6 @@ export default class SiteVisitor extends Component {
       .catch((error) => {
         console.log(error);
       });
-  }
-
-  rainConfetti() {
-    return <Confetti />;
   }
 
   visitorData() {

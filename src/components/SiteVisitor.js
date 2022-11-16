@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import VisitorTableRow from "./VisitorTableRow";
+import Confetti from "./Confetti";
 
 export default class SiteVisitor extends Component {
   constructor(props) {
@@ -33,25 +34,27 @@ export default class SiteVisitor extends Component {
       email: this.state.email,
       date: this.state.date,
     };
+
     axios
       .post(
         "https://portfolio-backend-alpha-rouge.vercel.app/visitors/create-visitor",
         visitorObject
       )
-      .then((res) => console.log(res.data));
+      .then((res) =>
+        axios
+          .get("https://portfolio-backend-alpha-rouge.vercel.app/visitors")
+          .then((res) => {
+            this.setState({
+              visitors: res.data,
+            });
+          })
+      );
+
     this.setState({
       name: "",
       email: "",
       date: "",
     });
-    // auto load data to table after submit without refresh
-    axios
-      .get("https://portfolio-backend-alpha-rouge.vercel.app/visitors")
-      .then((res) => {
-        this.setState({
-          visitors: res.data,
-        });
-      });
   }
 
   componentDidMount() {
@@ -65,6 +68,10 @@ export default class SiteVisitor extends Component {
       .catch((error) => {
         console.log(error);
       });
+  }
+
+  rainConfetti() {
+    return <Confetti />;
   }
 
   visitorData() {
@@ -102,7 +109,7 @@ export default class SiteVisitor extends Component {
                             value={this.state.name}
                             onChange={this.createVisitorName}
                             required
-                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-slate-800 focus:ring-slate-800 sm:text-sm text-gray-700 bg-gray-300"
+                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-slate-700 focus:ring-slate-700 sm:text-sm text-gray-700 bg-gray-300"
                           />
                         </div>
 
@@ -119,7 +126,7 @@ export default class SiteVisitor extends Component {
                             value={this.state.email}
                             onChange={this.createVisitorEmail}
                             required
-                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-slate-800 focus:ring-slate-800 sm:text-sm text-gray-700 bg-gray-300"
+                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-slate-700 focus:ring-slate-700 sm:text-sm text-gray-700 bg-gray-300"
                           />
                         </div>
                       </div>

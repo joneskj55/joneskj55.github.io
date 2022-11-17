@@ -11,12 +11,12 @@ function App() {
   return (
     <div className="font-dope">
       <Router>
-        <header>
-          <nav className="sticky top-0 mx-auto p-5 flex justify-evenly sm:justify-between py-4 px-6 bg-gray-200 shadow sm:items-baseline w-full mb-14">
+        <header className="lg:sticky top-0 z-50">
+          <nav className="mx-auto p-5 flex justify-evenly sm:justify-between py-4 px-6 bg-slate-900 shadow-2xl sm:items-baseline w-full mb-14">
             <div>
               <Link
                 to={"/"}
-                className="text-base sm:text-2xl text-gray-600 no-underline hover:text-gray-500"
+                className="text-base sm:text-2xl no-underline hover:text-gray-500"
               >
                 Kevin Jones
               </Link>
@@ -24,19 +24,19 @@ function App() {
             <div className="flex flex-row">
               <Link
                 to={"/resume"}
-                className="pr-5 text-sm sm:text-lg text-gray-600 hover:text-gray-500 invisible lg:visible"
+                className="pr-5 text-sm sm:text-lg hover:text-gray-500 invisible lg:visible"
               >
                 Resume
               </Link>
               <Link
                 to={"/projects"}
-                className="pr-5 text-sm sm:text-lg text-gray-600 hover:text-gray-500"
+                className="pr-5 text-sm sm:text-lg hover:text-gray-500"
               >
                 Projects
               </Link>
               <Link
                 to={"/visitors"}
-                className="text-sm sm:text-lg text-gray-600 hover:text-gray-500"
+                className="text-sm sm:text-lg hover:text-gray-500"
               >
                 Visitors
               </Link>

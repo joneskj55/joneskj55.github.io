@@ -18,7 +18,12 @@ function App() {
                 to={"/"}
                 className="text-base sm:text-2xl no-underline hover:text-gray-500"
               >
-                Kevin Jones
+                <img
+                  src={require("./images/king-lion.png")}
+                  alt="Kevin Jones"
+                  height={120}
+                  width={120}
+                />
               </Link>
             </div>
             <div className="flex flex-row">
@@ -30,13 +35,13 @@ function App() {
               </Link>
               <Link
                 to={"/projects"}
-                className="pr-5 text-sm sm:text-lg hover:text-gray-500"
+                className="pr-5 text-sm sm:text-lg hover:text-gray-500 invisible lg:visible"
               >
                 Projects
               </Link>
               <Link
                 to={"/visitors"}
-                className="text-sm sm:text-lg hover:text-gray-500"
+                className="text-sm sm:text-lg hover:text-gray-500 invisible lg:visible"
               >
                 Visitors
               </Link>

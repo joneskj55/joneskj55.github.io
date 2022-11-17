@@ -21,8 +21,8 @@ function App() {
                 <img
                   src={require("./images/king-lion.png")}
                   alt="Kevin Jones"
-                  height={120}
-                  width={120}
+                  height={150}
+                  width={150}
                 />
               </Link>
             </div>

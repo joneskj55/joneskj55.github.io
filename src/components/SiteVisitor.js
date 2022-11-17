@@ -132,11 +132,6 @@ export default class SiteVisitor extends Component {
     this.animationInstance = instance;
   };
 
-  static getDerivedStateFromProps(props, state) {
-    state.invalidData = !(state.name && state.email);
-    return state;
-  }
-
   render() {
     return (
       <main className="flex-grow mb-20 m-2 md:m-16">

@@ -4,7 +4,7 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 export default class ProjectTile extends Component {
   render() {
     return (
-      <div className="hover:shadow-xl">
+      <div className="shadow-lg hover:shadow-2xl">
         <a href={this.props.obj.url} target={"_blank"} rel="noreferrer">
           <div className="rounded overflow-hidden shadow-lg p-2 w-full h-full">
             <div className="px-6 py-4 flex-1 group">

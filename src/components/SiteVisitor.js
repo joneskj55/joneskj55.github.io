@@ -1,10 +1,22 @@
 import React, { Component } from "react";
 import axios from "axios";
 import VisitorTableRow from "./VisitorTableRow";
+import ReactCanvasConfetti from "react-canvas-confetti";
+
+const canvasStyles = {
+  position: "fixed",
+  pointerEvents: "none",
+  width: "100%",
+  height: "100%",
+  top: 0,
+  left: 0,
+};
 
 export default class SiteVisitor extends Component {
   constructor(props) {
     super(props);
+
+    this.animationInstance = null;
 
     this.createVisitorName = this.createVisitorName.bind(this);
     this.createVisitorEmail = this.createVisitorEmail.bind(this);
@@ -47,6 +59,9 @@ export default class SiteVisitor extends Component {
               visitors: res.data,
             });
           })
+          .then(() => {
+            this.fire();
+          })
       );
 
     this.setState({
@@ -75,11 +90,64 @@ export default class SiteVisitor extends Component {
     });
   }
 
+  makeShot = (particleRatio, opts) => {
+    this.animationInstance &&
+      this.animationInstance({
+        ...opts,
+        origin: { y: 0.7 },
+        particleCount: Math.floor(200 * particleRatio),
+      });
+  };
+
+  fire = () => {
+    this.makeShot(0.25, {
+      spread: 26,
+      startVelocity: 55,
+    });
+
+    this.makeShot(0.2, {
+      spread: 60,
+    });
+
+    this.makeShot(0.35, {
+      spread: 100,
+      decay: 0.91,
+      scalar: 0.8,
+    });
+
+    this.makeShot(0.1, {
+      spread: 120,
+      startVelocity: 25,
+      decay: 0.92,
+      scalar: 1.2,
+    });
+
+    this.makeShot(0.1, {
+      spread: 120,
+      startVelocity: 45,
+    });
+  };
+
+  getInstance = (instance) => {
+    this.animationInstance = instance;
+  };
+
+  static getDerivedStateFromProps(props, state) {
+    state.invalidData = !(state.name && state.email);
+    return state;
+  }
+
   render() {
     return (
       <main className="flex-grow mb-20 m-2 md:m-16">
         <h1 className="text-5xl md:text-7xl font-bold text-center">Visitors</h1>
         <br />
+        <div className="flex flex-col md:flex-row justify-center">
+          <ReactCanvasConfetti
+            refConfetti={this.getInstance}
+            style={canvasStyles}
+          />
+        </div>
         <p className="text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Add your info to the table.
         </p>

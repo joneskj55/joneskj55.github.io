@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import VisitorTableRow from "./VisitorTableRow";
 import ReactCanvasConfetti from "react-canvas-confetti";
+import { FiArrowUpCircle } from "react-icons/fi";
 
 const canvasStyles = {
   position: "fixed",
@@ -226,6 +227,12 @@ export default class SiteVisitor extends Component {
             </div>
           </div>
         </div>
+        <a
+          href="#"
+          className="flex flex-1 justify-center lg:justify-end animate-bounce pt-10"
+        >
+          <FiArrowUpCircle size="3em" />
+        </a>
       </main>
     );
   }

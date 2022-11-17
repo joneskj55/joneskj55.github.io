@@ -39,7 +39,8 @@ export default class HomePage extends Component {
           stuff, specifically the links to projects could have all been done
           through the client side. However, the goal of this site is to display
           full-stack capabilities. So please, poke around the site, check out my
-          socials, and feel free to reach out!{" "}
+          socials, add your name to the table in the visitors section, and feel
+          free to reach out!{" "}
         </p>
         <OpenSource />
         <Projects />

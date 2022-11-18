@@ -36,7 +36,7 @@ export default class HomePage extends Component {
           <SiNodedotjs className="hidden sm:block" />{" "}
           <SiTailwindcss className="mr-4 hidden sm:block" /> stack site!
         </p>
-        <p className="p-8 sm:p-14 font-light">
+        <p className="pt-8 pb-8 m-2 sm:p-14 font-light">
           I'm Kevin Jones, Veteran & Software Engineer. This intentionally
           over-engineered site is designed to display my full-stack
           capabilities. This site was built using the MERN stack with Tailwind

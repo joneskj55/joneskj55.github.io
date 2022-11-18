@@ -155,7 +155,7 @@ export default class SiteVisitor extends Component {
                   onSubmit={this.onSubmit}
                   className="flex flex-col h-full w-full pb-14"
                 >
-                  <div className="overflow-hidden shadow-2xl sm:rounded-md">
+                  <div className="overflow-hidden shadow-2xl rounded-lg">
                     <div className="px-4 py-5 sm:p-6">
                       <div className="grid grid-cols-6 gap-6">
                         <div className="col-span-6 sm:col-span-3">
@@ -202,8 +202,8 @@ export default class SiteVisitor extends Component {
                 </form>
 
                 <div className="flex flex-col h-full w-full text-xs sm:text-base">
-                  <div className="rounded border border-transparent mt-8 sm:mt-0 sm:w-full flex flex-col">
-                    <table className="overflow-hidden shadow-2xl sm:rounded-md w-full">
+                  <div className="border border-transparent mt-8 sm:mt-0 sm:w-full flex flex-col">
+                    <table className="overflow-hidden shadow-2xl rounded-md w-full">
                       <thead>
                         <tr className="bg-gray-300">
                           <th className="p-1 sm:p-4 text-center text-gray-600">

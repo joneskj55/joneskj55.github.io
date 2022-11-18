@@ -10,6 +10,7 @@ import Resume from "./Resume";
 import Projects from "./Projects";
 import SiteVisitor from "./SiteVisitor";
 import OpenSource from "./OpenSource";
+import { FiArrowUpCircle } from "react-icons/fi";
 
 export default class HomePage extends Component {
   render() {
@@ -48,6 +49,12 @@ export default class HomePage extends Component {
         <Projects />
         <Resume />
         <SiteVisitor />
+        <a
+          href="#"
+          className="flex flex-1 justify-center lg:justify-end animate-bounce"
+        >
+          <FiArrowUpCircle size="3em" />
+        </a>
       </main>
     );
   }

@@ -12,6 +12,13 @@ import SiteVisitor from "./SiteVisitor";
 import OpenSource from "./OpenSource";
 import { FiArrowUpCircle } from "react-icons/fi";
 
+const goToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 export default class HomePage extends Component {
   render() {
     return (
@@ -49,12 +56,9 @@ export default class HomePage extends Component {
         <Projects />
         <Resume />
         <SiteVisitor />
-        <a
-          href="#"
-          className="flex flex-1 justify-center lg:justify-end animate-bounce pt-6"
-        >
-          <FiArrowUpCircle size="3em" />
-        </a>
+        <div className="flex flex-1 justify-center lg:justify-end animate-bounce pt-6 lg:pt-0 hover:cursor-pointer">
+          <FiArrowUpCircle size="3em" onClick={goToTop} />
+        </div>
       </main>
     );
   }

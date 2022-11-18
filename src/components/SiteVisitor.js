@@ -135,7 +135,7 @@ export default class SiteVisitor extends Component {
 
   render() {
     return (
-      <main className="flex-grow mb-20 m-2 md:m-16">
+      <main className="flex-grow m-2 md:m-4">
         <h1 className="text-5xl md:text-7xl font-bold text-center">Visitors</h1>
         <br />
         <div className="flex flex-col md:flex-row justify-center">

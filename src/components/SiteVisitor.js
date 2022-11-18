@@ -152,7 +152,7 @@ export default class SiteVisitor extends Component {
               <div className="mt-8 sm:mt-0 flex flex-col">
                 <form
                   onSubmit={this.onSubmit}
-                  className="flex flex-col h-full w-full pb-14"
+                  className="flex flex-col h-full w-full sm:pb-14"
                 >
                   <div className="overflow-hidden shadow-2xl rounded-lg">
                     <div className="px-4 py-5 sm:p-6">

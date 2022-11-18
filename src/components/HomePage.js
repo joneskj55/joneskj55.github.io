@@ -51,7 +51,7 @@ export default class HomePage extends Component {
         <SiteVisitor />
         <a
           href="#"
-          className="flex flex-1 justify-center lg:justify-end animate-bounce"
+          className="flex flex-1 justify-center lg:justify-end animate-bounce pt-6"
         >
           <FiArrowUpCircle size="3em" />
         </a>

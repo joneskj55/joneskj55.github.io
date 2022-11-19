@@ -19,8 +19,8 @@ function App() {
                 className="text-base sm:text-2xl no-underline hover:text-gray-500"
               >
                 <img
-                  src={require("./images/king-lion.png")}
-                  alt="Kevin Jones"
+                  src={require("./images/logo.png")}
+                  alt="logo"
                   height={150}
                   width={150}
                 />

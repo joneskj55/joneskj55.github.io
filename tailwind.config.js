@@ -21,6 +21,7 @@ module.exports = {
     },
     fontFamily: {
       dope: ["Be Vietnam Pro", "sans-serif"],
+      jetbrains: ["JetBrains Mono", "monospace"],
     },
   },
   plugins: [require("@tailwindcss/forms")],

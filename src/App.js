@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="font-dope">
+    <div className="font-jetbrains">
       <Router>
         <header className="lg:sticky top-0 z-50">
           <nav className="mx-auto p-5 flex justify-evenly sm:justify-between py-4 px-6 bg-slate-900 shadow-2xl sm:items-baseline w-full mb-14">

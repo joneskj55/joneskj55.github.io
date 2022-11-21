@@ -17,7 +17,7 @@ export default function NotFound() {
         </a>
       </div>
       <p className="text-2xl md:text-3xl font-light mb-20 md:mb-10 text-center">
-        The URL does not exist.
+        The URL was not found.
       </p>
     </main>
   );

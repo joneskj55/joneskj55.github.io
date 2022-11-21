@@ -4,7 +4,7 @@ import GitHubCal from "./GitHubCal";
 export default class OpenSource extends Component {
   render() {
     return (
-      <main className="flex-grow mb-20 m-2 md:m-16">
+      <main className="flex-grow mb-20 m-2 md:m-16 md:pb-8">
         <h1 className="text-5xl md:text-7xl font-bold text-center">
           Open Source
         </h1>

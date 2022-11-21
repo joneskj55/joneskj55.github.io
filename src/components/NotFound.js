@@ -8,7 +8,12 @@ export default function NotFound() {
       </p>
       <div className="flex justify-center">
         <a href={"/"}>
-          <img src={require("../images/404.png")} alt={"404"} />
+          <img
+            src={require("../images/404.png")}
+            alt={"404"}
+            height={500}
+            width={500}
+          />
         </a>
       </div>
       <p className="text-2xl md:text-3xl font-light mb-20 md:mb-10 text-center">

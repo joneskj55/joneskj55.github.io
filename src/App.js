@@ -6,6 +6,7 @@ import HomePage from "./components/HomePage";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
               path="/visitors"
               component={(props) => <SiteVisitor {...props} />}
             />
+            <Route path="*" component={(props) => <NotFound {...props} />} />
           </Switch>
         </div>
       </Router>

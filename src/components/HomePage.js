@@ -40,12 +40,15 @@ export default class HomePage extends Component {
           I'm Kevin Jones, Veteran & Software Engineer. This intentionally
           over-engineered site is designed to display my full-stack
           capabilities. This site was built using the MERN stack with Tailwind
-          for styling. If you check out the links in the nav bar or simply
-          scroll down the page you will find my resume/ work history. The
-          projects section will provide some examples of my work, all of which
-          are live websites. The front end of this app is built with React and
-          Tailwind. Express and Node.js are used on the backend and MongoDB is
-          the database used for storage. As you probably know, most of this
+          for styling.{" "}
+          <span className="hidden lg:contents ">
+            If you check out the links in the nav bar or simply scroll down the
+            page you will find my resume/ work history.
+          </span>{" "}
+          The projects section will provide some examples of my work, all of
+          which are live websites. The front end of this app is built with React
+          and Tailwind. Express and Node.js are used on the backend and MongoDB
+          is the database used for storage. As you probably know, most of this
           stuff, specifically the links to projects could have all been done
           through the client side. However, the goal of this site is to display
           full-stack capabilities. So please, poke around the site, check out my

@@ -10,10 +10,10 @@ import NotFound from "./components/NotFound";
 
 function App() {
   return (
-    <div className="font-dope lg:font-jetbrains">
+    <div className="font-dope lg:font-jetbrains bg-gradient-to-r from-[#082338] via-[#000000] to-[#082338]">
       <Router>
         <header className="lg:sticky top-0 z-50">
-          <nav className="mx-auto p-5 flex justify-evenly sm:justify-between py-4 px-6 bg-slate-900 shadow-2xl sm:items-baseline w-full mb-14">
+          <nav className="mx-auto p-5 flex justify-evenly sm:justify-between py-4 px-6 bg-slate-900 shadow-2xl sm:items-baseline w-full mb-14 bg-gradient-to-r from-[#082338] via-[#000000] to-[#082338]">
             <div>
               <Link
                 to={"/"}

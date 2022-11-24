@@ -52,9 +52,9 @@ export default class HomePage extends Component {
           socials, add your name to the table in the visitors section, and feel
           free to reach out!{" "}
         </p>
+        <Resume />
         <OpenSource />
         <Projects />
-        <Resume />
         <SiteVisitor />
         <div className="flex flex-1 justify-center lg:justify-end animate-bounce pt-6 lg:pt-0 hover:cursor-pointer">
           <FiArrowUpCircle size="3em" onClick={goToTop} />

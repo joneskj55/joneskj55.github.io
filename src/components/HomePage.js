@@ -29,51 +29,37 @@ export default class HomePage extends Component {
         <br />
         <p className="flex flex-1 justify-center sm:text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Welcome to my{" "}
-          <span className="visible sm:hidden">&nbsp;MERN&nbsp;</span>
-          <SiMongodb className="ml-4 hidden sm:block" />{" "}
-          <SiExpress className="hidden sm:block" />
-          <SiReact className="hidden sm:block" />{" "}
-          <SiNodedotjs className="hidden sm:block" />{" "}
-          <SiTailwindcss className="mr-4 hidden sm:block" /> stack site!
+          <span className="visible sm:hidden text-[#37a134]">
+            &nbsp;MERN&nbsp;
+          </span>
+          <SiMongodb className="ml-4 hidden sm:block text-[#37a134]" />{" "}
+          <SiExpress className="hidden sm:block text-[#37a134]" />
+          <SiReact className="hidden sm:block text-[#37a134]" />{" "}
+          <SiNodedotjs className="hidden sm:block text-[#37a134]" />{" "}
+          <SiTailwindcss className="mr-4 hidden sm:block text-[#37a134]" />{" "}
+          stack site!
         </p>
         <p className="pt-8 pb-8 m-2 sm:p-14 font-light">
           I'm Kevin Jones, Veteran & Software Engineer. This intentionally
           over-engineered site is designed to display my{" "}
-          <span className="underline lg:decoration-dotted decoration-[#37a134] lg:decoration-4 underline-offset-4">
-            full-stack
-          </span>{" "}
-          capabilities. This site was built using the MERN stack with{" "}
-          <span className="underline lg:decoration-dotted decoration-[#37a134] lg:decoration-4 underline-offset-4">
-            Tailwind
-          </span>{" "}
-          for styling.{" "}
+          <span className="font-bold">full-stack</span> capabilities. This site
+          was built using the MERN stack with{" "}
+          <span className="font-bold">Tailwind</span> for styling.{" "}
           <span className="hidden lg:contents ">
             If you check out the links in the nav bar or simply scroll down the
             page you will find my resume/ work history.
           </span>{" "}
           The projects section will provide some examples of my work, all of
           which are live websites. The front end of this app is built with{" "}
-          <span className="underline lg:decoration-dotted decoration-[#37a134] lg:decoration-4 underline-offset-4">
-            React
-          </span>{" "}
-          and Tailwind.{" "}
-          <span className="underline lg:decoration-dotted decoration-[#37a134] lg:decoration-4 underline-offset-4">
-            Express
-          </span>{" "}
-          and{" "}
-          <span className="underline lg:decoration-dotted decoration-[#37a134] lg:decoration-4 underline-offset-4">
-            Node.js
-          </span>{" "}
-          are used on the backend and{" "}
-          <span className="underline lg:decoration-dotted decoration-[#37a134] lg:decoration-4 underline-offset-4">
-            MongoDB
-          </span>{" "}
-          is the database used for storage. As you probably know, most of this
-          stuff, specifically the links to projects could have all been done
-          through the client side. However, the goal of this site is to display
-          full-stack capabilities. So please, poke around the site, check out my
-          socials, add your name to the table in the visitors section, and feel
-          free to reach out!{" "}
+          <span className="font-bold">React</span> and Tailwind.{" "}
+          <span className="font-bold">Express</span> and{" "}
+          <span className="font-bold">Node.js</span> are used on the backend and{" "}
+          <span className="font-bold">MongoDB</span> is the database used for
+          storage. As you probably know, most of this stuff, specifically the
+          links to projects could have all been done through the client side.
+          However, the goal of this site is to display full-stack capabilities.
+          So please, poke around the site, check out my socials, add your name
+          to the table in the visitors section, and feel free to reach out!{" "}
         </p>
         <Resume />
         <OpenSource />

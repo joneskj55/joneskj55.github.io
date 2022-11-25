@@ -9,7 +9,7 @@ export default class ProjectTile extends Component {
           <div className="rounded-lg overflow-hidden shadow-lg p-2 w-full h-full">
             <div className="px-6 py-4 flex-1 group">
               <div className="font-bold text-xl mb-2">
-                <span className="flex flex-1 justify-end lg:invisible group-hover:visible text-[#37a134]">
+                <span className="flex flex-1 justify-end lg:invisible group-hover:visible text-[#37a134] duration-300 lg:scale-0 group-hover:scale-100">
                   <BsBoxArrowUpRight />
                 </span>
                 {this.props.obj.title}

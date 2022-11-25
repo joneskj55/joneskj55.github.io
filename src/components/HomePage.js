@@ -38,16 +38,36 @@ export default class HomePage extends Component {
         </p>
         <p className="pt-8 pb-8 m-2 sm:p-14 font-light">
           I'm Kevin Jones, Veteran & Software Engineer. This intentionally
-          over-engineered site is designed to display my full-stack
-          capabilities. This site was built using the MERN stack with Tailwind
+          over-engineered site is designed to display my{" "}
+          <span className="underline decoration-dotted decoration-[#37a134] decoration-4 underline-offset-4">
+            full-stack
+          </span>{" "}
+          capabilities. This site was built using the MERN stack with{" "}
+          <span className="underline decoration-dotted decoration-[#37a134] decoration-4 underline-offset-4">
+            Tailwind
+          </span>{" "}
           for styling.{" "}
           <span className="hidden lg:contents ">
             If you check out the links in the nav bar or simply scroll down the
             page you will find my resume/ work history.
           </span>{" "}
           The projects section will provide some examples of my work, all of
-          which are live websites. The front end of this app is built with React
-          and Tailwind. Express and Node.js are used on the backend and MongoDB
+          which are live websites. The front end of this app is built with{" "}
+          <span className="underline decoration-dotted decoration-[#37a134] decoration-4 underline-offset-4">
+            React
+          </span>{" "}
+          and Tailwind.{" "}
+          <span className="underline decoration-dotted decoration-[#37a134] decoration-4 underline-offset-4">
+            Express
+          </span>{" "}
+          and{" "}
+          <span className="underline decoration-dotted decoration-[#37a134] decoration-4 underline-offset-4">
+            Node.js
+          </span>{" "}
+          are used on the backend and{" "}
+          <span className="underline decoration-dotted decoration-[#37a134] decoration-4 underline-offset-4">
+            MongoDB
+          </span>{" "}
           is the database used for storage. As you probably know, most of this
           stuff, specifically the links to projects could have all been done
           through the client side. However, the goal of this site is to display

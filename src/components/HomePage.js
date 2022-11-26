@@ -33,11 +33,10 @@ export default class HomePage extends Component {
             &nbsp;MERN&nbsp;
           </span>
           <SiMongodb className="ml-4 hidden sm:block text-[#37a134]" />{" "}
-          <SiExpress className="hidden sm:block text-[#37a134]" />
-          <SiReact className="hidden sm:block text-[#37a134]" />{" "}
+          <SiExpress className="hidden sm:block" />
+          <SiReact className="hidden sm:block" />{" "}
           <SiNodedotjs className="hidden sm:block text-[#37a134]" />{" "}
-          <SiTailwindcss className="mr-4 hidden sm:block text-[#37a134]" />{" "}
-          stack site!
+          <SiTailwindcss className="mr-4 hidden sm:block" /> stack site!
         </p>
         <p className="pt-8 pb-8 m-2 sm:p-14 font-light">
           I'm Kevin Jones, Veteran & Software Engineer. This intentionally

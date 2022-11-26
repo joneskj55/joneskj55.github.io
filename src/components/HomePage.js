@@ -29,7 +29,7 @@ export default class HomePage extends Component {
         <br />
         <p className="flex flex-1 justify-center sm:text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
           Welcome to my{" "}
-          <span className="visible sm:hidden text-[#37a134]">
+          <span className="visible sm:hidden text-[#37a134] font-bold">
             &nbsp;MERN&nbsp;
           </span>
           <SiMongodb className="ml-4 hidden sm:block text-[#37a134]" />{" "}

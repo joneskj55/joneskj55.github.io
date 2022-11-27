@@ -10,6 +10,11 @@ export default class Projects extends Component {
       title: "",
       description: "",
       url: "",
+      tech: [],
+      year: "",
+      deployed: [],
+      repo: "",
+      private: Boolean,
       projects: [],
     };
   }

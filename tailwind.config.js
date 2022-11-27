@@ -1,4 +1,24 @@
 /** @type {import('tailwindcss').Config} */
+/** @type {Plugin} */
+const plugin = require("tailwindcss/plugin");
+
+const rotate = plugin(function ({ addUtilities }) {
+  addUtilities({
+    ".rotate": {
+      transform: "rotateY(180deg)",
+    },
+    ".preserve-3d": {
+      transformStyle: "preserve-3d",
+    },
+    ".perspective": {
+      perspective: "1000px",
+    },
+    ".backface-hidden": {
+      backfaceVisibility: "hidden",
+    },
+  });
+});
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -24,5 +44,5 @@ module.exports = {
       jetbrains: ["JetBrains Mono", "monospace"],
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), rotate],
 };

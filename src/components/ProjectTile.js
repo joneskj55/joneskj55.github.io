@@ -26,7 +26,7 @@ export default class ProjectTile extends Component {
         {/*mobile end*/}
 
         <div className="hidden lg:grid lg:h-[25rem] pt-6 bg-transparent group perspective rounded-lg shadow-lg hover:shadow-2xl">
-          <div className="relative preserve-3d group-hover:rotate w-full h-full duration-1000">
+          <div className="relative preserve-3d backface-hidden group-hover:rotate w-full h-full duration-1000">
             <div className="absolute backface-hidden w-full h-full">
               <a href={this.props.obj.url} target={"_blank"} rel="noreferrer">
                 <div className="rounded-lg overflow-hidden shadow-lg p-2 w-full h-full">

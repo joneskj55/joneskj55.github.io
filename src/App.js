@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import SiteVisitor from "./components/SiteVisitor";
 import HomePage from "./components/HomePage";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import SiteVisitor from "./components/SiteVisitor";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 

@@ -6,11 +6,11 @@ import {
   SiNodedotjs,
   SiTailwindcss,
 } from "react-icons/si";
+import { FiArrowUpCircle } from "react-icons/fi";
 import Resume from "./Resume";
 import OpenSource from "./OpenSource";
 import Projects from "./Projects";
 import SiteVisitor from "./SiteVisitor";
-import { FiArrowUpCircle } from "react-icons/fi";
 
 const goToTop = () => {
   window.scrollTo({

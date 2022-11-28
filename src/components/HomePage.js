@@ -43,22 +43,22 @@ export default class HomePage extends Component {
           over-engineered site is designed to display my{" "}
           <span className="font-bold">full-stack</span> capabilities. This site
           was built using the MERN stack with{" "}
-          <span className="font-bold">Tailwind</span> for styling.{" "}
+          <span className="font-bold">Tailwind</span> for styling. If you{" "}
           <span className="hidden lg:contents ">
-            If you check out the links in the nav bar or simply scroll down the
-            page you will find my resume/ work history.
+            check out the links in the nav bar or simply{" "}
           </span>{" "}
-          The projects section will provide some examples of my work, all of
-          which are live websites. The front end of this app is built with{" "}
+          scroll down the page you will find my resume/ work history. The
+          projects section will provide some examples of my work, all of which
+          are live websites. The front end of this app is built with{" "}
           <span className="font-bold">React</span> and Tailwind.{" "}
           <span className="font-bold">Express</span> and{" "}
           <span className="font-bold">Node.js</span> are used on the backend and{" "}
           <span className="font-bold">MongoDB</span> is the database used for
           storage. As you probably know, most of this stuff, specifically the
-          links to projects could have all been done through the client side.
-          However, the goal of this site is to display full-stack capabilities.
-          So please, poke around the site, check out my socials, add your name
-          to the table in the visitors section, and feel free to reach out!{" "}
+          project data, could have all been handled on the client side. However,
+          the goal of this site is to display full-stack capabilities. So
+          please, poke around the site, check out my socials, add your name to
+          the table in the visitors section, and feel free to reach out!{" "}
         </p>
         <Resume />
         <OpenSource />

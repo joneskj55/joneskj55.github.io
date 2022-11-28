@@ -1,5 +1,5 @@
-const { Link } = require("react-router-dom");
 const React = require("react");
+const { Link } = require("react-router-dom");
 
 export default function Nav() {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Nav from "./components/Nav";
 import SiteVisitor from "./components/SiteVisitor";
 import HomePage from "./components/HomePage";
 import Resume from "./components/Resume";
@@ -12,43 +13,7 @@ function App() {
   return (
     <div className="font-dope lg:font-jetbrains bg-gradient-to-tr from-[#082338] via-[#000000] to-[#082338]">
       <Router>
-        <header className="lg:sticky top-0 z-50">
-          <nav className="mx-auto p-5 flex justify-evenly sm:justify-between py-4 px-6 bg-slate-900 shadow-2xl sm:items-baseline w-full mb-14 bg-gradient-to-tr from-[#082338] via-[#000000] to-[#082338]">
-            <div>
-              <Link
-                to={"/"}
-                className="text-base sm:text-2xl no-underline hover:text-gray-500"
-              >
-                <img
-                  src={require("./images/logo.png")}
-                  alt="logo"
-                  height={150}
-                  width={150}
-                />
-              </Link>
-            </div>
-            <div className="flex flex-row">
-              <Link
-                to={"/resume"}
-                className="pr-5 text-sm sm:text-lg hover:text-gray-500 invisible lg:visible"
-              >
-                Resume
-              </Link>
-              <Link
-                to={"/projects"}
-                className="pr-5 text-sm sm:text-lg hover:text-gray-500 invisible lg:visible"
-              >
-                Projects
-              </Link>
-              <Link
-                to={"/visitors"}
-                className="text-sm sm:text-lg hover:text-gray-500 invisible lg:visible"
-              >
-                Visitors
-              </Link>
-            </div>
-          </nav>
-        </header>
+        <Nav />
         <div>
           <Switch>
             <Route

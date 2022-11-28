@@ -7,9 +7,9 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import Resume from "./Resume";
+import OpenSource from "./OpenSource";
 import Projects from "./Projects";
 import SiteVisitor from "./SiteVisitor";
-import OpenSource from "./OpenSource";
 import { FiArrowUpCircle } from "react-icons/fi";
 
 const goToTop = () => {

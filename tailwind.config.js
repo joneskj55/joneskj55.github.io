@@ -7,6 +7,9 @@ const rotate = plugin(function ({ addUtilities }) {
     ".rotate": {
       transform: "rotateY(180deg)",
     },
+    ".firefox": {
+      transform: "rotateX(0deg)",
+    },
     ".preserve-3d": {
       transformStyle: "preserve-3d",
     },

@@ -28,15 +28,10 @@ export default class HomePage extends Component {
         </h1>
         <br />
         <p className="flex flex-1 justify-center sm:text-2xl md:text-3xl font-light mb-5 md:mb-10 text-center">
-          Welcome to my{" "}
-          <span className="visible sm:hidden text-resume-green font-bold">
-            &nbsp;MERN&nbsp;
-          </span>
-          <SiMongodb className="ml-4 hidden sm:block text-resume-green" />{" "}
-          <SiExpress className="hidden sm:block" />
-          <SiReact className="hidden sm:block" />{" "}
-          <SiNodedotjs className="hidden sm:block text-resume-green" />{" "}
-          <SiTailwindcss className="mr-4 hidden sm:block" /> stack site!
+          Welcome to my <SiMongodb className="ml-1 sm:ml-4 text-resume-green" />{" "}
+          <SiExpress />
+          <SiReact /> <SiNodedotjs className=" text-resume-green" />{" "}
+          <SiTailwindcss className="mr-1 sm:mr-4" /> stack site!
         </p>
         <p className="pt-8 pb-8 m-2 sm:p-14 font-light">
           I'm Kevin Jones, Technologist & Software Engineer. This intentionally

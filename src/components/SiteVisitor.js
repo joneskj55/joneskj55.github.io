@@ -167,7 +167,7 @@ export default class SiteVisitor extends Component {
                             value={this.state.name}
                             onChange={this.createVisitorName}
                             required
-                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#37a134] focus:ring-[#37a134] sm:text-sm text-gray-700 bg-gray-300"
+                            className="mt-1 block w-full rounded-md border-main-gray shadow-sm focus:border-[#37a134] focus:ring-[#37a134] sm:text-sm text-gray-900 bg-main-gray"
                           />
                         </div>
 
@@ -184,7 +184,7 @@ export default class SiteVisitor extends Component {
                             value={this.state.email}
                             onChange={this.createVisitorEmail}
                             required
-                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#37a134] focus:ring-[#37a134] sm:text-sm text-gray-700 bg-gray-300"
+                            className="mt-1 block w-full rounded-md border-main-gray shadow-sm focus:border-[#37a134] focus:ring-[#37a134] sm:text-sm text-gray-900 bg-main-gray"
                           />
                         </div>
                       </div>
@@ -204,14 +204,14 @@ export default class SiteVisitor extends Component {
                   <div className="border border-transparent mt-8 sm:mt-0 sm:w-full flex flex-col">
                     <table className="overflow-hidden shadow-2xl rounded-md w-full">
                       <thead>
-                        <tr className="bg-gray-300">
-                          <th className="p-1 sm:p-4 text-center text-gray-600">
+                        <tr className="bg-main-gray">
+                          <th className="p-1 sm:p-4 text-center text-gray-900">
                             Name
                           </th>
-                          <th className="p-1 sm:p-4 text-center text-gray-600">
+                          <th className="p-1 sm:p-4 text-center text-gray-900">
                             Email
                           </th>
-                          <th className="p-1 sm:p-4 text-center text-gray-600">
+                          <th className="p-1 sm:p-4 text-center text-gray-900">
                             Date
                           </th>
                         </tr>

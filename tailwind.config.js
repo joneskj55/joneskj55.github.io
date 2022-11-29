@@ -41,6 +41,9 @@ module.exports = {
       animation: {
         "waving-hand": "wave 2s linear infinite",
       },
+      colors: {
+        "main-gray": "#8997ac",
+      },
     },
     fontFamily: {
       dope: ["Be Vietnam Pro", "sans-serif"],

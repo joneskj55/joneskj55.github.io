@@ -10,7 +10,7 @@ import NotFound from "./components/NotFound";
 
 function App() {
   return (
-    <div className="font-dope lg:font-jetbrains bg-gradient-to-tr from-[#082338] via-[#000000] to-[#082338]">
+    <div className="font-dope lg:font-jetbrains text-main-gray bg-gradient-to-tr from-[#082338] via-[#000000] to-[#082338]">
       <Router>
         <Nav />
         <div>

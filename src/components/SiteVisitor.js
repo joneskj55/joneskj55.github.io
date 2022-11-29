@@ -167,7 +167,7 @@ export default class SiteVisitor extends Component {
                             value={this.state.name}
                             onChange={this.createVisitorName}
                             required
-                            className="mt-1 block w-full rounded-md border-main-gray shadow-sm focus:border-[#37a134] focus:ring-[#37a134] sm:text-sm text-gray-900 bg-main-gray"
+                            className="mt-1 block w-full rounded-md border-main-gray shadow-sm focus:border-resume-green focus:ring-resume-green sm:text-sm text-gray-900 bg-main-gray"
                           />
                         </div>
 
@@ -184,7 +184,7 @@ export default class SiteVisitor extends Component {
                             value={this.state.email}
                             onChange={this.createVisitorEmail}
                             required
-                            className="mt-1 block w-full rounded-md border-main-gray shadow-sm focus:border-[#37a134] focus:ring-[#37a134] sm:text-sm text-gray-900 bg-main-gray"
+                            className="mt-1 block w-full rounded-md border-main-gray shadow-sm focus:border-resume-green focus:ring-resume-green sm:text-sm text-gray-900 bg-main-gray"
                           />
                         </div>
                       </div>
@@ -192,7 +192,7 @@ export default class SiteVisitor extends Component {
                     <div className="px-4 py-3 text-right sm:px-6">
                       <button
                         type="submit"
-                        className="inline-flex justify-center rounded-md border border-transparent bg-[#006d32] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#26a641] focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2"
+                        className="inline-flex justify-center rounded-md border border-transparent bg-green-button py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-green-btn-hover focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2"
                       >
                         Add Name
                       </button>

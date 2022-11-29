@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-/** @type {Plugin} */
-const plugin = require("tailwindcss/plugin");
 
-const rotate = plugin(function ({ addUtilities }) {
+const rotate = function ({ addUtilities }) {
   addUtilities({
     ".rotate": {
       transform: "rotateY(180deg)",
@@ -20,7 +18,7 @@ const rotate = plugin(function ({ addUtilities }) {
       backfaceVisibility: "hidden",
     },
   });
-});
+};
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -43,6 +41,9 @@ module.exports = {
       },
       colors: {
         "main-gray": "#8997ac",
+        "resume-green": "#37a134",
+        "green-button": "#006d32",
+        "green-btn-hover": "#26a641",
       },
     },
     fontFamily: {

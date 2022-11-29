@@ -11,7 +11,7 @@ export default class ProjectTile extends Component {
             <div className="rounded-lg overflow-hidden shadow-lg p-2 w-full h-full">
               <div className="px-6 py-4 flex-1 group">
                 <div className="font-bold text-xl mb-2">
-                  <span className="flex flex-1 justify-end lg:invisible group-hover:visible text-[#37a134] duration-300 lg:scale-0 group-hover:scale-100">
+                  <span className="flex flex-1 justify-end lg:invisible group-hover:visible text-resume-green duration-300 lg:scale-0 group-hover:scale-100">
                     <BsBoxArrowUpRight />
                   </span>
                   {this.props.obj.title}
@@ -46,7 +46,7 @@ export default class ProjectTile extends Component {
               <a href={this.props.obj.url} target={"_blank"} rel="noreferrer">
                 <div className="px-6 py-4 flex-1 group">
                   <div className="font-bold text-xl mb-2">
-                    <span className="flex flex-1 justify-end lg:invisible group-hover:visible text-[#37a134] delay-500 duration-1000 lg:scale-0 group-hover:scale-100">
+                    <span className="flex flex-1 justify-end lg:invisible group-hover:visible text-resume-green delay-500 duration-1000 lg:scale-0 group-hover:scale-100">
                       <BsBoxArrowUpRight className="hover:text-[#39d353]" />
                     </span>
                     {this.props.obj.title}
@@ -86,7 +86,7 @@ export default class ProjectTile extends Component {
                   {this.props.obj.private ? (
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-[#006d32] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#0e4429] focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-green-button py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#0e4429] focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2"
                       disabled
                     >
                       Private Repo
@@ -94,7 +94,7 @@ export default class ProjectTile extends Component {
                   ) : (
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-[#006d32] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#26a641] focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-green-button py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-green-btn-hover focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2"
                     >
                       Repo
                     </button>

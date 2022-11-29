@@ -12,7 +12,7 @@ export default class Footer extends Component {
           aria-label="linkedin"
         >
           {" "}
-          <FaLinkedin className="text-5xl mr-8 hover:text-gray-400" />
+          <FaLinkedin className="text-5xl mr-8 hover:text-gray-500" />
         </a>
         <a
           href={"https://github.com/joneskj55"}
@@ -20,7 +20,7 @@ export default class Footer extends Component {
           rel="noreferrer"
           aria-label="github"
         >
-          <FaGithub className="text-5xl mr-8 hover:text-gray-400" />
+          <FaGithub className="text-5xl mr-8 hover:text-gray-500" />
         </a>
         <a
           href={"https://dev.to/joneskj55"}
@@ -28,7 +28,7 @@ export default class Footer extends Component {
           rel="noreferrer"
           aria-label="dev.to"
         >
-          <FaDev className="text-5xl hover:text-gray-400" />
+          <FaDev className="text-5xl hover:text-gray-500" />
         </a>
       </footer>
     );

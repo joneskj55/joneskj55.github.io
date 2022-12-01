@@ -59,8 +59,12 @@ export default class HomePage extends Component {
         <OpenSource />
         <Projects />
         <SiteVisitor />
-        <div className="flex flex-1 justify-center lg:justify-end animate-bounce pt-6 lg:pt-0 hover:cursor-pointer">
-          <FiArrowUpCircle size="3em" onClick={goToTop} />
+        <div className="flex flex-1 justify-center lg:justify-end animate-bounce pt-6 lg:pt-0">
+          <FiArrowUpCircle
+            className="hover:text-gray-500 hover:cursor-pointer"
+            size="3em"
+            onClick={goToTop}
+          />
         </div>
       </main>
     );

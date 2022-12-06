@@ -6,18 +6,11 @@ import {
   SiNodedotjs,
   SiTailwindcss,
 } from "react-icons/si";
-import { FiArrowUpCircle } from "react-icons/fi";
 import Resume from "./Resume";
 import OpenSource from "./OpenSource";
 import Projects from "./Projects";
 import SiteVisitor from "./SiteVisitor";
-
-const goToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
+import ScrollToTop from "./ScrollToTop";
 
 export default class HomePage extends Component {
   render() {
@@ -59,13 +52,7 @@ export default class HomePage extends Component {
         <OpenSource />
         <Projects />
         <SiteVisitor />
-        <div className="flex flex-1 justify-center lg:justify-end animate-bounce pt-6 lg:pt-0">
-          <FiArrowUpCircle
-            className="hover:text-gray-500 hover:cursor-pointer"
-            size="3em"
-            onClick={goToTop}
-          />
-        </div>
+        <ScrollToTop />
       </main>
     );
   }

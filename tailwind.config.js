@@ -17,6 +17,9 @@ const rotate = function ({ addUtilities }) {
     ".backface-hidden": {
       backfaceVisibility: "hidden",
     },
+    ".half-bg": {
+      background: "linear-gradient(to top, #39d35333 50%, transparent 50%)",
+    },
   });
 };
 

@@ -29,19 +29,19 @@ export default class HomePage extends Component {
         <p className="pt-8 pb-8 m-2 sm:p-14 font-light">
           I'm Kevin Jones, Technologist & Software Engineer. This intentionally
           over-engineered site is designed to display my{" "}
-          <span className="font-bold">full-stack</span> capabilities. This site
+          <span className="half-bg">full-stack</span> capabilities. This site
           was built using the MERN stack with{" "}
-          <span className="font-bold">Tailwind</span> for styling. If you{" "}
+          <span className="half-bg">Tailwind</span> for styling. If you{" "}
           <span className="hidden lg:contents ">
             check out the links in the nav bar or simply{" "}
           </span>{" "}
           scroll down the page you will find my resume/ work history. The
           projects section will provide some examples of my work, all of which
           are live websites. The front end of this app is built with{" "}
-          <span className="font-bold">React</span> and Tailwind.{" "}
-          <span className="font-bold">Express</span> and{" "}
-          <span className="font-bold">Node.js</span> are used on the backend and{" "}
-          <span className="font-bold">MongoDB</span> is the database used for
+          <span className="half-bg">React</span> and Tailwind.{" "}
+          <span className="half-bg">Express</span> and{" "}
+          <span className="half-bg">Node.js</span> are used on the backend and{" "}
+          <span className="half-bg">MongoDB</span> is the database used for
           storage. As you probably know, most of this stuff, specifically the
           project data, could have all been handled on the client side. However,
           the goal of this site is to display full-stack capabilities. So

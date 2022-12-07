@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import { FcCheckmark } from "react-icons/fc";
 
 export default class ProjectTile extends Component {
   render() {
@@ -54,7 +55,12 @@ export default class ProjectTile extends Component {
                   <p className="text-gray-400 mb-2">Tech used:</p>
                   <ul className="text-gray-400 text-base font-thin mb-2">
                     {this.props.obj.tech?.map((tech, i) => {
-                      return <li key={i}>{tech}</li>;
+                      return (
+                        <li key={i}>
+                          <FcCheckmark className="inline text-resume-green" />{" "}
+                          {tech}
+                        </li>
+                      );
                     })}
                   </ul>
                   <div className="text-gray-400 mb-2">

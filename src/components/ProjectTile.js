@@ -53,11 +53,11 @@ export default class ProjectTile extends Component {
                     {this.props.obj.title}
                   </div>
                   <p className="text-gray-400 mb-2">Tech used:</p>
-                  <ul className="text-gray-400 text-base font-thin mb-2">
+                  <ul className="text-gray-400 text-base font-thin mb-2 delay-500 duration-1000 lg:scale-0 group-hover:scale-100">
                     {this.props.obj.tech?.map((tech, i) => {
                       return (
                         <li key={i}>
-                          <FcCheckmark className="inline text-resume-green" />{" "}
+                          <FcCheckmark className="delay-1000 duration-1000 lg:scale-0 group-hover:scale-100 inline text-resume-green" />{" "}
                           {tech}
                         </li>
                       );

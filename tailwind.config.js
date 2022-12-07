@@ -18,7 +18,10 @@ const rotate = function ({ addUtilities }) {
       backfaceVisibility: "hidden",
     },
     ".half-bg": {
-      background: "linear-gradient(to top, #39d35333 50%, transparent 50%)",
+      background: "linear-gradient(to top, #39d35333 40%, transparent 40%)",
+    },
+    ".half-bg-hover": {
+      background: "linear-gradient(to top, #39d35333 100%, transparent 100%)",
     },
   });
 };

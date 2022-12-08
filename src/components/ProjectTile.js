@@ -92,7 +92,7 @@ export default class ProjectTile extends Component {
                   {this.props.obj.private ? (
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-green-button py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#0e4429] focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-green-button py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#0e4429] focus:outline-none focus:ring-2 focus:ring-slate-800 focus:ring-offset-2 cursor-not-allowed"
                       disabled
                     >
                       Private Repo

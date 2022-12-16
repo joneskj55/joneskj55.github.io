@@ -164,6 +164,7 @@ export default class SiteVisitor extends Component {
                           <input
                             type="text"
                             id="name"
+                            placeholder="Zumbi"
                             value={this.state.name}
                             onChange={this.createVisitorName}
                             required
@@ -181,6 +182,7 @@ export default class SiteVisitor extends Component {
                           <input
                             type="email"
                             id="email-address"
+                            placeholder="zumbi@palmares.com"
                             value={this.state.email}
                             onChange={this.createVisitorEmail}
                             required

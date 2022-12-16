@@ -26,7 +26,7 @@ export default class HomePage extends Component {
           <SiReact /> <SiNodedotjs className=" text-resume-green" />{" "}
           <SiTailwindcss className="mr-1 sm:mr-4" /> stack site!
         </p>
-        <p className="pt-8 pb-8 m-2 sm:p-14 font-light">
+        <p className="lg:text-lg pt-8 pb-8 m-2 sm:p-14 font-light">
           I'm Kevin Jones, Technologist & Software Engineer. This intentionally
           over-engineered site is designed to display my{" "}
           <span className="half-bg hover:half-bg-hover cursor-default">

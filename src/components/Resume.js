@@ -11,7 +11,7 @@ class Resume extends Component {
         </p>
         <div className="flex justify-center pb-8 pt-10 md:pt-14">
           <img
-            className="shadow-2xl hover:shadow-resume-green transition duration-500"
+            className="shadow-2xl lg:hover:shadow-resume-green transition duration-500"
             src={require("../images/resume.png")}
             alt="resume"
             height={1000}

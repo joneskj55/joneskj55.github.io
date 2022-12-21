@@ -35,9 +35,13 @@ export default class ProjectTile extends Component {
                     <div className="font-bold text-xl mb-2">
                       {this.props.obj.title}
                     </div>
-                    <p className="text-gray-400 text-base font-thin">
-                      {this.props.obj.description}
-                    </p>
+                    <img
+                      className="object-contain h-72 w-72 mx-auto"
+                      src={this.props.obj.img}
+                      alt={this.props.obj.title}
+                      height={"100%"}
+                      width={"100%"}
+                    />
                   </div>
                 </div>
               </a>

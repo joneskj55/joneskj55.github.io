@@ -14,6 +14,7 @@ export default class Projects extends Component {
       year: "",
       deployed: [],
       repo: "",
+      img: "",
       private: Boolean,
       projects: [],
     };

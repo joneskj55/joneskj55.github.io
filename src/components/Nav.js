@@ -11,7 +11,7 @@ export default function Nav() {
             className="text-base sm:text-2xl no-underline hover:text-gray-500"
           >
             <img
-              src={require("../images/logo.png")}
+              src={require("../images/logo.webp")}
               alt="logo"
               height={150}
               width={150}

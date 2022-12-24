@@ -10,7 +10,7 @@ export default function NotFound() {
       <div className="flex justify-center">
         <a href={"/"}>
           <img
-            src={require("../images/404.png")}
+            src={require("../images/404.webp")}
             alt={"404"}
             height={500}
             width={500}

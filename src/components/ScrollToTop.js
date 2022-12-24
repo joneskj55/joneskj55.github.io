@@ -1,3 +1,4 @@
+import React from "react";
 import { FiArrowUpCircle } from "react-icons/fi";
 
 export default function ScrollToTop() {

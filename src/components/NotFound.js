@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function NotFound() {
   return (
     <main className="flex-grow m-2 md:m-4">

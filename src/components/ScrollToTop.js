@@ -1,4 +1,3 @@
-import React from "react";
 import { FiArrowUpCircle } from "react-icons/fi";
 
 export default function ScrollToTop() {
@@ -8,7 +7,7 @@ export default function ScrollToTop() {
       behavior: "smooth",
     });
   };
-  
+
   return (
     <div className="flex flex-1 justify-center lg:justify-end animate-bounce pt-6 lg:pt-0">
       <FiArrowUpCircle

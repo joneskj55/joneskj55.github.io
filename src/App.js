@@ -10,37 +10,38 @@ import NotFound from "./components/NotFound";
 
 function App() {
   return (
-    <div className="font-dope lg:font-jetbrains text-main-gray bg-gradient-to-tr from-[#082338] via-[#000000] to-[#082338]">
-      <Router>
-        <Nav />
-        <div>
-          <Switch>
-            <Route
-              exact
-              path="/"
-              component={(props) => <HomePage {...props} />}
-            />
-            <Route
-              exact
-              path="/resume"
-              component={(props) => <Resume {...props} />}
-            />
-            <Route
-              exact
-              path="/projects"
-              component={(props) => <Projects {...props} />}
-            />
-            <Route
-              exact
-              path="/visitors"
-              component={(props) => <SiteVisitor {...props} />}
-            />
-            <Route path="*" component={(props) => <NotFound {...props} />} />
-          </Switch>
-        </div>
-      </Router>
-      <Footer />
-    </div>
+    <h1>yup</h1>
+    // <div className="font-dope lg:font-jetbrains text-main-gray bg-gradient-to-tr from-[#082338] via-[#000000] to-[#082338]">
+    //   <Router>
+    //     <Nav />
+    //     <div>
+    //       <Switch>
+    //         <Route
+    //           exact
+    //           path="/"
+    //           component={(props) => <HomePage {...props} />}
+    //         />
+    //         <Route
+    //           exact
+    //           path="/resume"
+    //           component={(props) => <Resume {...props} />}
+    //         />
+    //         <Route
+    //           exact
+    //           path="/projects"
+    //           component={(props) => <Projects {...props} />}
+    //         />
+    //         <Route
+    //           exact
+    //           path="/visitors"
+    //           component={(props) => <SiteVisitor {...props} />}
+    //         />
+    //         <Route path="*" component={(props) => <NotFound {...props} />} />
+    //       </Switch>
+    //     </div>
+    //   </Router>
+    //   <Footer />
+    // </div>
   );
 }
 
